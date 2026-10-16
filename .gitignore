@@ -15,6 +15,7 @@ token.txt
 *.token
 .env
 .env.*
+config.json
 
 # Logs and temporary files
 *.log

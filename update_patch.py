@@ -1,14 +1,6 @@
 # update_patch.py - Automatic translation updater after Steam game patches
 import os, sys, shutil, subprocess, json
-
-DEFAULT_GAME_PATHS = [
-    r"C:\Program Files (x86)\Steam\steamapps\common\Atelier Yumia",
-    r"D:\SteamLibrary\steamapps\common\Atelier Yumia",
-    r"E:\SteamLibrary\steamapps\common\Atelier Yumia",
-    r"F:\SteamLibrary\steamapps\common\Atelier Yumia",
-    r"D:\Steam\steamapps\common\Atelier Yumia",
-    r"E:\Steam\steamapps\common\Atelier Yumia",
-]
+import game_config
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PAK_WORK_DIR = os.path.join(BASE_DIR, "pak_work")
@@ -16,14 +8,6 @@ GUST_PAK_EXE = os.path.join(BASE_DIR, "gust_tools", "gust_pak.exe")
 PROJECT_JSON = os.path.join(BASE_DIR, "project_yumia_es_en.json")
 TEXT_TOOL_PY = os.path.join(BASE_DIR, "yumia_text_tool.py")
 FIX_ACCENTS_PY = os.path.join(BASE_DIR, "fix_accents.py")
-
-def find_game_dir(custom_path=None):
-    if custom_path and os.path.isdir(custom_path):
-        return custom_path
-    for p in DEFAULT_GAME_PATHS:
-        if os.path.isdir(p) and os.path.isfile(os.path.join(p, "Data", "PACK00.pak")):
-            return p
-    return None
 
 def run_cmd(cmd, cwd=None):
     print(f">> Executing: {' '.join(cmd)}")
@@ -38,15 +22,17 @@ def main():
     print(" ATELIER YUMIA - ITALIAN TRANSLATION AUTO-UPDATER")
     print("=" * 66)
 
-    # 1. Locate game directory
+    # 1. Determine game directory
     custom_dir = sys.argv[1] if len(sys.argv) > 1 else None
-    game_dir = find_game_dir(custom_dir)
+    if custom_dir and game_config.is_valid_game_dir(custom_dir):
+        game_dir = custom_dir
+        game_config.save_game_dir(game_dir)
+    else:
+        game_dir = game_config.get_or_prompt_game_dir(interactive=True)
+
     if not game_dir:
-        print("\nAtelier Yumia game folder not found in default paths.")
-        game_dir = input("Enter your game installation folder path: ").strip('\"\' ')
-        if not (os.path.isdir(game_dir) and os.path.isfile(os.path.join(game_dir, "Data", "PACK00.pak"))):
-            print("Invalid directory or PACK00.pak missing!")
-            sys.exit(1)
+        print("ERROR: Cannot proceed without a valid Atelier Yumia folder containing Data/PACK00.pak!")
+        sys.exit(1)
 
     print(f"\n[1/5] Game directory detected:\n      {game_dir}")
     data_dir = os.path.join(game_dir, "Data")

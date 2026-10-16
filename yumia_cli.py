@@ -1,5 +1,6 @@
 # yumia_cli.py - Interactive CLI tool for Atelier Yumia Italian Translation
 import os, sys, subprocess, shutil, json
+import game_config
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_JSON = os.path.join(BASE_DIR, "project_yumia_es_en.json")
@@ -13,21 +14,32 @@ PAK_WORK_DIR = os.path.join(BASE_DIR, "pak_work")
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
 
-def print_header():
+def print_header(game_dir):
     print("=" * 66)
     print("        ATELIER YUMIA - ITALIAN TRANSLATION TOOLKIT (CLI)")
     print("=" * 66)
+    if game_dir:
+        print(f"  Game Folder: {game_dir}")
+    else:
+        print("  Game Folder: [Not configured - will auto-detect]")
+    print("-" * 66)
 
 def ask_choice(prompt, default="1"):
     val = input(f"{prompt} [{default}]: ").strip()
     return val if val else default
 
-def option_install_ready():
+def option_install_ready(game_dir):
     print("\n--- INSTALL / UPDATE TRANSLATION IN GAME ---")
-    print("Applying the pre-translated Italian dataset (29,007 segments)...\n")
-    subprocess.run([sys.executable, UPDATE_PATCH_PY], cwd=BASE_DIR)
+    if not game_dir:
+        game_dir = game_config.get_or_prompt_game_dir(interactive=True)
+        if not game_dir:
+            print("Cannot proceed without a valid game installation directory.")
+            return
 
-def option_ai_translation():
+    print("Applying the pre-translated Italian dataset (29,007 segments)...\n")
+    subprocess.run([sys.executable, UPDATE_PATCH_PY, game_dir], cwd=BASE_DIR)
+
+def option_ai_translation(game_dir):
     print("\n--- INTERACTIVE AI TRANSLATION SETUP ---")
     
     # 1. Provider Selection
@@ -109,7 +121,7 @@ def option_ai_translation():
     # Prompt to apply into game
     apply_now = ask_choice("\nApply translated texts into the game now? (y/n)", "y").lower()
     if apply_now in ("y", "yes"):
-        subprocess.run([sys.executable, UPDATE_PATCH_PY], cwd=BASE_DIR)
+        option_install_ready(game_dir)
 
 def option_extract_game():
     print("\n--- EXTRACT RAW GAME TEXTS ---")
@@ -123,28 +135,58 @@ def option_extract_game():
     subprocess.run(cmd, cwd=BASE_DIR)
     print("\nExtraction finished successfully!")
 
+def option_configure_game_dir(current_dir):
+    print("\n--- CONFIGURE GAME INSTALLATION DIRECTORY ---")
+    if current_dir:
+        print(f"Current saved path:\n  {current_dir}\n")
+    else:
+        print("No game directory currently saved.\n")
+
+    new_dir = input("Enter new Atelier Yumia folder path (or press Enter to cancel): ").strip('\"\' ')
+    if not new_dir:
+        return current_dir
+
+    if game_config.is_valid_game_dir(new_dir):
+        saved = game_config.save_game_dir(new_dir)
+        print(f"\n[OK] Game path successfully updated:\n     {saved}")
+        return saved
+    else:
+        print("\n[ERROR] Invalid path! The folder must contain 'Data/PACK00.pak'. Path not saved.")
+        return current_dir
+
 def main():
+    # Load or auto-detect game directory on startup
+    game_dir = game_config.load_saved_game_dir()
+    if not game_dir:
+        game_dir = game_config.detect_game_dir()
+        if game_dir:
+            game_config.save_game_dir(game_dir)
+
     while True:
         clear_screen()
-        print_header()
+        print_header(game_dir)
         print("\nWhat would you like to do?\n")
         print("  [1] Install / Update translation in game (Fast, ~15s, ready-to-play)")
         print("  [2] AI Translation (Configure provider, API key, model & workers)")
         print("  [3] Extract raw texts from game (Create a fresh project.json)")
-        print("  [4] Exit")
+        print("  [4] Change / Set game folder path")
+        print("  [5] Exit")
         print()
         
         choice = ask_choice("Select an option number", "1")
         if choice == "1":
-            option_install_ready()
+            option_install_ready(game_dir)
             input("\nPress ENTER to continue...")
         elif choice == "2":
-            option_ai_translation()
+            option_ai_translation(game_dir)
             input("\nPress ENTER to continue...")
         elif choice == "3":
             option_extract_game()
             input("\nPress ENTER to continue...")
         elif choice == "4":
+            game_dir = option_configure_game_dir(game_dir)
+            input("\nPress ENTER to continue...")
+        elif choice == "5":
             print("\nGoodbye!")
             break
         else:
