@@ -8,8 +8,7 @@ Complete fan-translation toolchain and localization dataset for **Atelier Yumia:
 
 - **Dual-Language Pipeline (ES + EN → IT):** Translates primarily from Spanish for natural Romance-language syntax, syllable timing, and lip-sync cadence, while simultaneously cross-referencing English to eliminate false friends and ambiguities.
 - **100% Text Coverage:** Covers all **29,007 segments** (~106,000 dialogue words + ~185,000 UI, menu, synthesis, item, and tutorial words).
-- **Font-Safe Accent Normalization:** Built-in normalization (`fix_accents.py`) prevents missing glyphs / square boxes on game font atlases.
-- **Dual-Slot Compatibility:** Can be installed in either the **French (`fra`)** or **Spanish (`spa`)** language slot in-game.
+- **Font-Safe Accent Normalization:** Built-in normalization (`fix_accents.py`) converts accented vowels to ASCII letters with apostrophes (`e'`, `piu'`, `pero'`), completely eliminating missing glyphs / square boxes on game font atlases.
 - **Concurrent AI Translation:** Multi-threaded translator (`yumia_translate.py`) supporting any OpenAI-compatible endpoint (OpenAI GPT-4o / GPT-5 / Luna models, Ollama, LM Studio, etc.) with automatic resume and tag-preservation verification.
 
 ---
@@ -51,9 +50,8 @@ cd ..
 ```
 
 ### 3. Apply the Italian Translation
-Apply the Italian text to the French and Spanish slots:
+Apply the Italian text to the Spanish slot:
 ```bash
-python yumia_text_tool.py apply fra pak_work\master project_yumia_es_en.json
 python yumia_text_tool.py apply spa pak_work\master project_yumia_es_en.json
 ```
 
@@ -67,7 +65,7 @@ cd ..
 ### 5. Install to the Game
 1. Make a backup of the original `PACK00.pak` in your game's `Data\` folder (e.g., rename to `PACK00.pak.original`).
 2. Copy `pak_work\PACK00.pak` to `<GamePath>\Data\PACK00.pak`.
-3. Launch the game and set the language in settings to **Français** (or **Español**). All text, menus, dialogues, and system notices will be in **Italian**!
+3. Launch the game and set the language in settings to **Español**. All text, menus, dialogues, and system notices will be in **Italian**!
 
 ---
 
@@ -128,7 +126,7 @@ Follow the steps in [Fast Track](#fast-track-installing-the-translation) to inje
 JRPG English localizations frequently compress dialogue lengths and lose honorific/grammatical register (e.g. *you* collapses *tu/Lei/Voi*, loss of gendered adjectives). Translating from Spanish preserves grammatical gender, subjunctive moods, and sentence duration that matches Japanese voice-acting timing much more closely.
 
 ### Font Handling
-Gust engine bitmap fonts use texture atlases containing only characters used by specific languages. `fix_accents.py` automatically maps grave vowels to their acute equivalents (`è` → `é`, `à` → `á`) and curved quotes (`’`, `“`, `”`) to standard ASCII, guaranteeing 0 missing character boxes ("tofu").
+Gust engine bitmap fonts use texture atlases containing only characters used by specific languages. `fix_accents.py` automatically converts accented vowels to ASCII letters followed by apostrophes (`e'`, `a'`, `i'`, `o'`, `u'`) and curved quotes (`’`, `“`, `”`) to standard ASCII, guaranteeing 100% font compatibility and zero missing character boxes ("tofu").
 
 ---
 
