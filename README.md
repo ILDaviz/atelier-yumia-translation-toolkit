@@ -76,6 +76,8 @@ copy /y pak_work\PACK00.pak "<GamePath>\Data\PACK00.pak"
 
 ---
 
-## Disclaimer
+## Disclaimer & AI Translation Notice
 
-Non-commercial fan translation project. *Atelier Yumia* is a trademark and copyright of **KOEI TECMO GAMES CO., LTD.** / **GUST**.
+- **AI-Generated:** This fan translation was generated using artificial intelligence (LLM).
+- **Combined Dual-Source Reference:** To maximize accuracy, natural phrasing, and contextual consistency, the Italian translation was created by cross-referencing both the **Spanish** text (target game slot) and the official **English** localization.
+- **Non-Commercial Fan Project:** This project is strictly non-commercial and not affiliated with KOEI TECMO or GUST. *Atelier Yumia: The Alchemist of Memories & the Envisioned Land* is a trademark and copyright of **KOEI TECMO GAMES CO., LTD.** / **GUST**. This patch requires a legitimate, legally owned copy of the game on Steam.

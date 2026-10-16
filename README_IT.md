@@ -81,8 +81,8 @@ I font originali dello slot spagnolo nel motore Gust non includono le vocali con
 
 ---
 
-## Disclaimer
+## Disclaimer & Nota sulla Traduzione IA
 
-Progetto amatoriale di traduzione realizzato da fan, senza scopo di lucro e non affiliato con KOEI TECMO o GUST.  
-*Atelier Yumia: The Alchemist of Memories & the Envisioned Land* è un marchio registrato e copyright di **KOEI TECMO GAMES CO., LTD.** / **GUST**.  
-Questa patch richiede il possesso legittimo di una copia originale del gioco su Steam.
+- **Traduzione generata tramite IA:** Questa traduzione amatoriale è stata generata mediante modelli linguistici avanzati di Intelligenza Artificiale (LLM).
+- **Base combinata Spagnolo + Inglese:** Per garantire la massima naturalezza, coerenza terminologica e comprensione del contesto, i testi italiani sono stati prodotti combinando e analizzando congiuntamente il testo originale **spagnolo** (slot linguistico sostituito nel gioco) e il testo ufficiale **inglese** come riferimento semantico incrociato.
+- **Progetto fan-made non commerciale:** Progetto amatoriale e gratuito, non affiliato né approvato da KOEI TECMO o GUST. *Atelier Yumia: The Alchemist of Memories & the Envisioned Land* è un marchio registrato e copyright di **KOEI TECMO GAMES CO., LTD.** / **GUST**. Questa patch richiede il possesso legittimo di una copia originale del gioco su Steam.
