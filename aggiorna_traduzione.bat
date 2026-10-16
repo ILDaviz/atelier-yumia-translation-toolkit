@@ -1,5 +1,6 @@
 @echo off
-title Aggiorna Traduzione Atelier Yumia
+title Atelier Yumia - Italian Translation Toolkit
+chcp 65001 >nul
 cd /d "%~dp0"
-python update_patch.py
+python yumia_cli.py
 pause

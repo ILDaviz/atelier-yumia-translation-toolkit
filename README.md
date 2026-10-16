@@ -34,7 +34,8 @@ If an official game update or Steam patch resets your language:
 | File | Description |
 | :--- | :--- |
 | **`project_yumia_es_en.json`** | Full dataset with all 29,007 translated segments. |
-| **`aggiorna_traduzione.bat`** | 1-click Windows installer and patch updater. |
+| **`aggiorna_traduzione.bat`** | Interactive CLI launcher for Windows (1-click menu). |
+| **`yumia_cli.py`** | Interactive CLI wizard (installer, AI configurator, extractor). |
 | **`update_patch.py`** | Automated installation & packaging script. |
 | **`yumia_text_tool.py`** | A26 EBM and UI `message.json` extractor/injector. |
 | **`yumia_translate.py`** | Multi-threaded AI translation tool (OpenAI / Ollama). |
