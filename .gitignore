@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large game files & extracted directories
+pak_work/
+*.pak
+*.pak.original
+*.bak
+
+# Sensitive tokens, keys and environment variables
+token.txt
+*.key
+*.token
+.env
+.env.*
+
+# Logs and temporary files
+*.log
+.system_generated/
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

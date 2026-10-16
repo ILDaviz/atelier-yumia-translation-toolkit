@@ -1,0 +1,428 @@
+{
+ "source": "spa",
+ "reference": "eng",
+ "files": {
+  "__ui__/message.json": [
+   {
+    "label": "STR_TUTO_TITLE_000",
+    "src": "¿Quieres cerrar la ventana?",
+    "ref": "Close the window?",
+    "dst": "Vuoi chiudere la finestra?",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_000"
+   },
+   {
+    "label": "STR_TUTO_TITLE_001",
+    "src": "Exploración: Reparación",
+    "ref": "Exploration: Repairing",
+    "dst": "Esplorazione: Riparazione",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_001"
+   },
+   {
+    "label": "STR_TUTO_TITLE_002",
+    "src": "Misiones: Pantalla de destino",
+    "ref": "Quests: Destination Display",
+    "dst": "Missioni: Schermata della destinazione",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_002"
+   },
+   {
+    "label": "STR_TUTO_TITLE_003",
+    "src": "Misiones: Misiones aleatorias",
+    "ref": "Quests: Random Quests",
+    "dst": "Missioni: Missioni casuali",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_003"
+   },
+   {
+    "label": "STR_TUTO_TITLE_004",
+    "src": "Construcciones: Construcción de la base",
+    "ref": "Building: Base Construction",
+    "dst": "Costruzioni: Costruzione della base",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_004"
+   },
+   {
+    "label": "STR_TUTO_TITLE_005",
+    "src": "Combate: Usar curaciones",
+    "ref": "Combat: Using Restoratives",
+    "dst": "Combattimento: Uso degli oggetti curativi",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_005"
+   },
+   {
+    "label": "STR_TUTO_TITLE_006",
+    "src": "Exploración: Disparo",
+    "ref": "Exploration: Shooting",
+    "dst": "Esplorazione: Tiro",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_006"
+   },
+   {
+    "label": "STR_TUTO_TITLE_007",
+    "src": "Exploración: Munición explosiva",
+    "ref": "Exploration: Burst Ammo",
+    "dst": "Esplorazione: Munizioni esplosive",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_007"
+   },
+   {
+    "label": "STR_TUTO_TITLE_008",
+    "src": "Exploración: Santuario del Rezo",
+    "ref": "Exploration: Shrine of Prayer",
+    "dst": "Esplorazione: Santuario della Preghiera",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_008"
+   },
+   {
+    "label": "STR_TUTO_TITLE_009",
+    "src": "Sistema: Viaje rápido",
+    "ref": "System: Fast Travel",
+    "dst": "Sistema: Viaggio rapido",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_009"
+   },
+   {
+    "label": "STR_TUTO_TITLE_011",
+    "src": "Sistema: Mapas de zona",
+    "ref": "System: Area Maps",
+    "dst": "Sistema: Mappe delle zone",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_011"
+   },
+   {
+    "label": "STR_TUTO_TITLE_012",
+    "src": "Exploración: Síntesis sencilla y Bolsa de exploración",
+    "ref": "Exploration: Simple Synthesis and the Exploration Bag",
+    "dst": "Esplorazione: Sintesi semplice e Borsa da esplorazione",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_012"
+   },
+   {
+    "label": "STR_TUTO_TITLE_013",
+    "src": "Síntesis: Síntesis normal",
+    "ref": "Synthesis: Normal Synthesis",
+    "dst": "Sintesi: Sintesi normale",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_013"
+   },
+   {
+    "label": "STR_TUTO_TITLE_019",
+    "src": "Síntesis: Reducción de elementos",
+    "ref": "Synthesis: Element Reduction",
+    "dst": "Sintesi: Riduzione degli elementi",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_019"
+   },
+   {
+    "label": "STR_TUTO_TITLE_021",
+    "src": "Combate: Derrota",
+    "ref": "Combat: Defeat",
+    "dst": "Combattimento: Sconfitta",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_021"
+   },
+   {
+    "label": "STR_TUTO_TITLE_022",
+    "src": "Combate: Equipar objetos",
+    "ref": "Combat: Equipping Items",
+    "dst": "Combattimento: Equipaggiare oggetti",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_022"
+   },
+   {
+    "label": "STR_TUTO_TITLE_023",
+    "src": "Misiones: Misiones en seguimiento",
+    "ref": "Quests: Tracking Quests",
+    "dst": "Missioni: Missioni monitorate",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_023"
+   },
+   {
+    "label": "STR_TUTO_TITLE_024",
+    "src": "Construcciones: Colocar objetos",
+    "ref": "Building: Placing Objects",
+    "dst": "Costruzioni: Posizionare oggetti",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_024"
+   },
+   {
+    "label": "STR_TUTO_TITLE_026",
+    "src": "Construcciones: Fabricar muebles",
+    "ref": "Building: Making Furniture",
+    "dst": "Costruzioni: Fabbricare mobili",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_026"
+   },
+   {
+    "label": "STR_TUTO_TITLE_027",
+    "src": "Construcciones: Nivel de comodidad",
+    "ref": "Building: Comfort Level",
+    "dst": "Costruzioni: Livello di comfort",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_027"
+   },
+   {
+    "label": "STR_TUTO_TITLE_028",
+    "src": "Exploración: Generador de energía",
+    "ref": "Exploration: Energy Generator",
+    "dst": "Esplorazione: Generatore di energia",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_028"
+   },
+   {
+    "label": "STR_TUTO_TITLE_029",
+    "src": "Exploración: Salto en pared",
+    "ref": "Exploration: Wall Jumping",
+    "dst": "Esplorazione: Salto sulla parete",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_029"
+   },
+   {
+    "label": "STR_TUTO_TITLE_031",
+    "src": "Combate: Ataques fuertes",
+    "ref": "Combat: Strong Attacks",
+    "dst": "Combattimento: Attacchi forti",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_031"
+   },
+   {
+    "label": "STR_TUTO_TITLE_032",
+    "src": "Exploración: Caída desde gran altura",
+    "ref": "Exploration: Falling from High Up",
+    "dst": "Esplorazione: Caduta da grandi altezze",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_032"
+   },
+   {
+    "label": "STR_TUTO_TITLE_033",
+    "src": "Objetos: Cristales de atributo",
+    "ref": "Items: Trait Crystals",
+    "dst": "Oggetti: Cristalli degli attributi",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_033"
+   },
+   {
+    "label": "STR_TUTO_TITLE_034",
+    "src": "Otros: Opciones de cámara",
+    "ref": "Other: Camera Options",
+    "dst": "Altro: Opzioni della fotocamera",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_034"
+   },
+   {
+    "label": "STR_TUTO_TITLE_035",
+    "src": "Combate: Opciones de batalla",
+    "ref": "Combat: Battle Options",
+    "dst": "Combattimento: Opzioni di battaglia",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_035"
+   },
+   {
+    "label": "STR_TUTO_TITLE_040",
+    "src": "Construcciones: Construcción de la base",
+    "ref": "Building: Base Construction",
+    "dst": "Costruzioni: Costruzione della base",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_040"
+   },
+   {
+    "label": "STR_TUTO_TITLE_041",
+    "src": "Construcciones: Ubicación",
+    "ref": "Building: Place",
+    "dst": "Costruzioni: Posizionamento",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_041"
+   },
+   {
+    "label": "STR_TUTO_TITLE_042",
+    "src": "Construcciones: Banco de trabajo",
+    "ref": "Building: Workbench",
+    "dst": "Costruzioni: Banco di lavoro",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_042"
+   },
+   {
+    "label": "STR_TUTO_TITLE_043",
+    "src": "Construcciones: Generador de energía",
+    "ref": "Building: Energy Generator",
+    "dst": "Costruzioni: Generatore di energia",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_043"
+   },
+   {
+    "label": "STR_TUTO_TITLE_044",
+    "src": "Construcciones: Nivel de comodidad",
+    "ref": "Building: Comfort Level",
+    "dst": "Costruzioni: Livello di comfort",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_044"
+   },
+   {
+    "label": "STR_TUTO_TITLE_045",
+    "src": "Construcciones: Tintes",
+    "ref": "Building: Dyes",
+    "dst": "Costruzioni: Coloranti",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_045"
+   },
+   {
+    "label": "STR_TUTO_TITLE_046",
+    "src": "Construcciones: Invernadero",
+    "ref": "Building: Greenhouse",
+    "dst": "Costruzioni: Serra",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_046"
+   },
+   {
+    "label": "STR_TUTO_TITLE_047",
+    "src": "Construcciones: Almacén",
+    "ref": "Building: Storehouse",
+    "dst": "Costruzioni: Magazzino",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_047"
+   },
+   {
+    "label": "STR_TUTO_TITLE_048",
+    "src": "Construcciones: Máquina de duplicación",
+    "ref": "Building: Duplication Machine",
+    "dst": "Costruzioni: Macchina duplicatrice",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_048"
+   },
+   {
+    "label": "STR_TUTO_TITLE_049",
+    "src": "Construcciones: Conversor de maná",
+    "ref": "Building: Mana Converter",
+    "dst": "Costruzioni: Convertitore di mana",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_049"
+   },
+   {
+    "label": "STR_TUTO_TITLE_050",
+    "src": "Construcciones: Asaltos",
+    "ref": "Building: Assaults",
+    "dst": "Costruzioni: Assalti",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_050"
+   },
+   {
+    "label": "STR_TUTO_TITLE_052",
+    "src": "Exploración: Munición cortante",
+    "ref": "Exploration: Slicing Ammo",
+    "dst": "Esplorazione: Munizioni taglienti",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_052"
+   },
+   {
+    "label": "STR_TUTO_TITLE_053",
+    "src": "Exploración: Agacharse",
+    "ref": "Exploration: Crouching",
+    "dst": "Esplorazione: Accovacciarsi",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_053"
+   },
+   {
+    "label": "STR_TUTO_TITLE_054",
+    "src": "Exploración: Hora y clima",
+    "ref": "Exploration: Time & Weather",
+    "dst": "Esplorazione: Ora e meteo",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_054"
+   },
+   {
+    "label": "STR_TUTO_TITLE_055",
+    "src": "Exploración: Lugares destacados",
+    "ref": "Exploration: Landmarks",
+    "dst": "Esplorazione: Luoghi notevoli",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_055"
+   },
+   {
+    "label": "STR_TUTO_TITLE_057",
+    "src": "Exploración: Hordas de monstruos",
+    "ref": "Exploration: Monster Swarms",
+    "dst": "Esplorazione: Orde di mostri",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_057"
+   },
+   {
+    "label": "STR_TUTO_TITLE_058",
+    "src": "Exploración: Ruinas",
+    "ref": "Exploration: Ruins",
+    "dst": "Esplorazione: Rovine",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_058"
+   },
+   {
+    "label": "STR_TUTO_TITLE_059",
+    "src": "Minijuego: Pesca",
+    "ref": "Minigame: Fishing",
+    "dst": "Minigioco: Pesca",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_059"
+   },
+   {
+    "label": "STR_TUTO_TITLE_060",
+    "src": "Minijuego: Reparar circuitos",
+    "ref": "Minigame: Circuit Repair",
+    "dst": "Minigioco: Riparare i circuiti",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_060"
+   },
+   {
+    "label": "STR_TUTO_TITLE_061",
+    "src": "Minijuego: Refinado de maná",
+    "ref": "Minigame: Mana Tuning",
+    "dst": "Minigioco: Raffinazione del mana",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_061"
+   },
+   {
+    "label": "STR_TUTO_TITLE_062",
+    "src": "Minijuego: Abrir cerraduras",
+    "ref": "Minigame: Lock Picking",
+    "dst": "Minigioco: Aprire le serrature",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_062"
+   },
+   {
+    "label": "STR_TUTO_TITLE_064",
+    "src": "Exploración: Energía y zonas de vínculo de maná",
+    "ref": "Exploration: Manabound Areas and Energy",
+    "dst": "Esplorazione: Energia e aree legate al mana",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_064"
+   },
+   {
+    "label": "STR_TUTO_TITLE_065",
+    "src": "Exploración: Escáner",
+    "ref": "Exploration: Scanning",
+    "dst": "Esplorazione: Scanner",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_065"
+   },
+   {
+    "label": "STR_TUTO_TITLE_066",
+    "src": "Exploración: Escáner de gran alcance",
+    "ref": "Exploration: Long-Range Scanning",
+    "dst": "Esplorazione: Scanner a lungo raggio",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_066"
+   },
+   {
+    "label": "STR_TUTO_TITLE_067",
+    "src": "Exploración: Géiseres de maná",
+    "ref": "Exploration: Mana Geysers",
+    "dst": "Esplorazione: Geyser di mana",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_067"
+   },
+   {
+    "label": "STR_TUTO_TITLE_068",
+    "src": "Exploración: Flores de Alstahlia",
+    "ref": "Exploration: Alstahlia Flowers",
+    "dst": "Esplorazione: Fiori di Alstahlia",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_068"
+   },
+   {
+    "label": "STR_TUTO_TITLE_069",
+    "src": "Exploración: Campamento",
+    "ref": "Exploration: Camp",
+    "dst": "Esplorazione: Accampamento",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_069"
+   },
+   {
+    "label": "STR_TUTO_TITLE_070",
+    "src": "Exploración: Funciones del Atelier",
+    "ref": "Exploration: Atelier Functions",
+    "dst": "Esplorazione: Funzioni dell'Atelier",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_070"
+   },
+   {
+    "label": "STR_TUTO_TITLE_071",
+    "src": "Exploración: Procella",
+    "ref": "Exploration: Procella",
+    "dst": "Esplorazione: Procella",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_071"
+   },
+   {
+    "label": "STR_TUTO_TITLE_072",
+    "src": "Exploración: Reunir elementos del escenario",
+    "ref": "Exploration: Gathering Stage Elements",
+    "dst": "Esplorazione: Raccogliere gli elementi dello scenario",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_072"
+   },
+   {
+    "label": "STR_TUTO_TITLE_073",
+    "src": "Exploración: Buscarreliquias",
+    "ref": "Exploration: Relic Finder",
+    "dst": "Esplorazione: Cercareliquie",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_073"
+   },
+   {
+    "label": "STR_TUTO_TITLE_074",
+    "src": "Exploración: Mover obstáculos",
+    "ref": "Exploration: Moving Obstacles",
+    "dst": "Esplorazione: Spostare gli ostacoli",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_074"
+   },
+   {
+    "label": "STR_TUTO_TITLE_075",
+    "src": "Otros: Modo foto - Mover la cámara",
+    "ref": "Other: Photo Mode - Moving the Camera",
+    "dst": "Altro: Modalità foto - Spostare la fotocamera",
+    "id": "__ui__/message.json::STR_TUTO_TITLE_075"
+   }
+  ]
+ }
+}
