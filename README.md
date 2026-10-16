@@ -1,4 +1,8 @@
-# Atelier Yumia: Italian Translation
+# Atelier Yumia: Italian Translation & Toolkit
+
+[🇬🇧 Read in English](README.md) | [🇮🇹 Leggi in Italiano](README_IT.md)
+
+---
 
 Complete 100% Italian fan translation for **Atelier Yumia: The Alchemist of Memories & the Envisioned Land** (Steam / PC).
 
