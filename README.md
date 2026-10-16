@@ -69,6 +69,25 @@ cd ..
 
 ---
 
+## Game Updates & Steam Patches (1-Click Auto-Updater)
+
+Whenever Steam downloads an official patch or updates the game files, you don't need to do any manual work:
+
+Simply run the automatic updater:
+- **Windows double-click:** Double-click `aggiorna_traduzione.bat`
+- **Or via terminal:**
+  ```bash
+  python update_patch.py
+  ```
+
+The tool will automatically:
+1. Locate your Steam installation of *Atelier Yumia*.
+2. Extract the updated `PACK00.pak`.
+3. Re-inject all 29,007 Italian translations into the Spanish slot.
+4. Repack and install the new file into the game directory.
+
+---
+
 ## Full Pipeline: Translating From Scratch
 
 If a game update is released or you want to translate into another language:
