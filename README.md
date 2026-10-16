@@ -26,7 +26,7 @@ Replaces the **Spanish** language slot with clean, natural Italian.
 Running `run_toolkit.bat` (or `python src/yumia_cli.py`) opens an interactive menu:
 
 - **`[1] Install / Update translation in game`**: Automatically injects all 29,007 Italian translations into the game (~15 seconds, ready-to-play).
-- **`[2] AI Translation`**: Interactive wizard to run or customize translations with AI (prompts for provider, API key, model name, and workers).
+- **`[2] AI Translation`**: Interactive wizard to run or customize translations with AI. *(Recommended model: **`gpt-6-luna`** via OpenAI — exceptionally fast, high accuracy, and costs under $0.50 for the entire game).*
 - **`[3] Extract raw texts from game`**: Extracts dialogues and UI text directly from game files into a new project JSON (useful when new DLCs or major game updates arrive).
 - **`[4] Change / Set game folder path`**: Displays the currently detected Steam folder and lets you set a custom path if needed.
 

@@ -45,7 +45,7 @@ def option_ai_translation(game_dir):
     
     # 1. Provider Selection
     print("\nSelect your LLM Provider:")
-    print("  [1] OpenAI (Cloud - GPT-6 Luna, GPT-5, GPT-4o-mini)")
+    print("  [1] OpenAI (Cloud - GPT-6 Luna [Recommended], GPT-5, GPT-4o-mini)")
     print("  [2] Ollama (Local - Qwen 2.5, Llama 3, Mistral)")
     print("  [3] Custom / OpenAI-compatible endpoint (DeepSeek, Groq, LM Studio)")
     p_choice = ask_choice("Provider choice", "1")
@@ -78,7 +78,7 @@ def option_ai_translation(game_dir):
             api_key = input(f"{key_prompt}: ").strip()
 
     # 2. Model
-    model = ask_choice("Model name", default_model)
+    model = ask_choice("Model name (Recommended: gpt-6-luna)", default_model)
 
     # 3. Parallel Workers
     workers = ask_choice("Number of concurrent requests (workers)", default_workers)
