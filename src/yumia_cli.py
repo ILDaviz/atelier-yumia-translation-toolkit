@@ -2,14 +2,15 @@
 import os, sys, subprocess, shutil, json
 import game_config
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_JSON = os.path.join(BASE_DIR, "project_yumia_es_en.json")
-GLOSSARY_JSON = os.path.join(BASE_DIR, "glossary.json")
-UPDATE_PATCH_PY = os.path.join(BASE_DIR, "update_patch.py")
-TRANSLATE_PY = os.path.join(BASE_DIR, "yumia_translate.py")
-FIX_ACCENTS_PY = os.path.join(BASE_DIR, "fix_accents.py")
-TEXT_TOOL_PY = os.path.join(BASE_DIR, "yumia_text_tool.py")
-PAK_WORK_DIR = os.path.join(BASE_DIR, "pak_work")
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SRC_DIR)
+PROJECT_JSON = os.path.join(PROJECT_ROOT, "project_yumia_es_en.json")
+GLOSSARY_JSON = os.path.join(PROJECT_ROOT, "glossary.json")
+UPDATE_PATCH_PY = os.path.join(SRC_DIR, "update_patch.py")
+TRANSLATE_PY = os.path.join(SRC_DIR, "yumia_translate.py")
+FIX_ACCENTS_PY = os.path.join(SRC_DIR, "fix_accents.py")
+TEXT_TOOL_PY = os.path.join(SRC_DIR, "yumia_text_tool.py")
+PAK_WORK_DIR = os.path.join(PROJECT_ROOT, "pak_work")
 
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
@@ -37,7 +38,7 @@ def option_install_ready(game_dir):
             return
 
     print("Applying the pre-translated Italian dataset (29,007 segments)...\n")
-    subprocess.run([sys.executable, UPDATE_PATCH_PY, game_dir], cwd=BASE_DIR)
+    subprocess.run([sys.executable, UPDATE_PATCH_PY, game_dir], cwd=PROJECT_ROOT)
 
 def option_ai_translation(game_dir):
     print("\n--- INTERACTIVE AI TRANSLATION SETUP ---")
@@ -109,14 +110,14 @@ def option_ai_translation(game_dir):
         "--workers", str(workers),
         "--glossary", GLOSSARY_JSON
     ]
-    res = subprocess.run(cmd, cwd=BASE_DIR)
+    res = subprocess.run(cmd, cwd=PROJECT_ROOT)
     if res.returncode != 0:
         print("\nError occurred during translation.")
         return
 
     # Accent normalization
     print("\n>> Normalizing font characters (fix_accents.py)...")
-    subprocess.run([sys.executable, FIX_ACCENTS_PY, project_file], cwd=BASE_DIR)
+    subprocess.run([sys.executable, FIX_ACCENTS_PY, project_file], cwd=PROJECT_ROOT)
 
     # Prompt to apply into game
     apply_now = ask_choice("\nApply translated texts into the game now? (y/n)", "y").lower()
@@ -132,7 +133,7 @@ def option_extract_game():
     out_file = ask_choice("Output filename for new project", "project_yumia_es_en.json")
     print(f"\n>> Extracting text from {master_dir}...")
     cmd = [sys.executable, TEXT_TOOL_PY, "extract", "spa", "eng", master_dir, out_file]
-    subprocess.run(cmd, cwd=BASE_DIR)
+    subprocess.run(cmd, cwd=PROJECT_ROOT)
     print("\nExtraction finished successfully!")
 
 def option_configure_game_dir(current_dir):

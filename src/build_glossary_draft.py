@@ -1,8 +1,10 @@
 # Build a starter glossary draft from the project file: frequent terms + proper nouns
-import json, re, collections, sys
+import json, os, re, collections, sys
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SRC_DIR)
 
-PROJECT = sys.argv[1] if len(sys.argv) > 1 else "project_yumia_es_en.json"
-OUT_MD = sys.argv[2] if len(sys.argv) > 2 else "glossary_draft.md"
+PROJECT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(PROJECT_ROOT, "project_yumia_es_en.json")
+OUT_MD = sys.argv[2] if len(sys.argv) > 2 else os.path.join(PROJECT_ROOT, "glossary_draft.md")
 
 proj = json.load(open(PROJECT, encoding="utf-8"))
 

@@ -14,7 +14,7 @@ Replaces the **Spanish** language slot with clean, natural Italian.
 
 ### Installation
 1. Clone or download this repository.
-2. Double-click **`run_toolkit.bat`** (or run `python update_patch.py` in terminal).
+2. Double-click **`run_toolkit.bat`** (or run `python src/update_patch.py` in terminal).
 3. Launch the game and set the text language to **Español** in the settings.
 
 *That's it! All dialogues, menus, tutorials, items, and UI are now in Italian.*
@@ -31,15 +31,15 @@ If an official game update or Steam patch resets your language:
 
 ## Files Overview
 
-| File | Description |
+| File / Folder | Description |
 | :--- | :--- |
 | **`project_yumia_es_en.json`** | Full dataset with all 29,007 translated segments. |
 | **`run_toolkit.bat`** | Interactive CLI launcher for Windows (1-click menu). |
-| **`yumia_cli.py`** | Interactive CLI wizard (installer, AI configurator, extractor). |
-| **`update_patch.py`** | Automated installation & packaging script. |
-| **`yumia_text_tool.py`** | A26 EBM and UI `message.json` extractor/injector. |
-| **`yumia_translate.py`** | Multi-threaded AI translation tool (OpenAI / Ollama). |
-| **`fix_accents.py`** | Font-safe character normalizer. |
+| **`src/yumia_cli.py`** | Interactive CLI wizard (installer, AI configurator, extractor). |
+| **`src/update_patch.py`** | Automated installation & packaging script. |
+| **`src/yumia_text_tool.py`** | A26 EBM and UI `message.json` extractor/injector. |
+| **`src/yumia_translate.py`** | Multi-threaded AI translation tool (OpenAI / Ollama). |
+| **`src/fix_accents.py`** | Font-safe character normalizer. |
 | **`gust_tools/`** | Official Gust PAK unpacker and repacker binaries. |
 
 ---
@@ -52,7 +52,7 @@ If you prefer running commands manually:
 cd pak_work && ..\gust_tools\gust_pak.exe "<GamePath>\Data\PACK00.pak" && cd ..
 
 # 2. Inject Italian translation
-python yumia_text_tool.py apply spa pak_work\master project_yumia_es_en.json
+python src/yumia_text_tool.py apply spa pak_work\master project_yumia_es_en.json
 
 # 3. Repack and copy
 cd pak_work && ..\gust_tools\gust_pak.exe PACK00.json && cd ..

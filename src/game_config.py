@@ -1,7 +1,9 @@
 # game_config.py - Helper for detecting, validating, and saving game paths
 import os, sys, json, winreg
 
-CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SRC_DIR)
+CONFIG_FILE = os.path.join(PROJECT_ROOT, "config.json")
 
 DEFAULT_CANDIDATE_PATHS = [
     r"C:\Program Files (x86)\Steam\steamapps\common\Atelier Yumia",

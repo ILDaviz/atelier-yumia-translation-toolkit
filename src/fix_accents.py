@@ -1,6 +1,13 @@
-import json, sys
+import json, os, sys
 
-project_path = sys.argv[1] if len(sys.argv) > 1 else "project_yumia_es_en.json"
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SRC_DIR)
+DEFAULT_PROJECT = os.path.join(PROJECT_ROOT, "project_yumia_es_en.json")
+project_path = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_PROJECT
+if not os.path.isabs(project_path) and not os.path.exists(project_path):
+    candidate = os.path.join(PROJECT_ROOT, project_path)
+    if os.path.exists(candidate):
+        project_path = candidate
 
 replacements = {
     'à': "a'",

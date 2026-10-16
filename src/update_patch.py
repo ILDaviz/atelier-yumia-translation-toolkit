@@ -2,12 +2,13 @@
 import os, sys, shutil, subprocess, json
 import game_config
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PAK_WORK_DIR = os.path.join(BASE_DIR, "pak_work")
-GUST_PAK_EXE = os.path.join(BASE_DIR, "gust_tools", "gust_pak.exe")
-PROJECT_JSON = os.path.join(BASE_DIR, "project_yumia_es_en.json")
-TEXT_TOOL_PY = os.path.join(BASE_DIR, "yumia_text_tool.py")
-FIX_ACCENTS_PY = os.path.join(BASE_DIR, "fix_accents.py")
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SRC_DIR)
+PAK_WORK_DIR = os.path.join(PROJECT_ROOT, "pak_work")
+GUST_PAK_EXE = os.path.join(PROJECT_ROOT, "gust_tools", "gust_pak.exe")
+PROJECT_JSON = os.path.join(PROJECT_ROOT, "project_yumia_es_en.json")
+TEXT_TOOL_PY = os.path.join(SRC_DIR, "yumia_text_tool.py")
+FIX_ACCENTS_PY = os.path.join(SRC_DIR, "fix_accents.py")
 
 def run_cmd(cmd, cwd=None):
     print(f">> Executing: {' '.join(cmd)}")
@@ -55,12 +56,12 @@ def main():
 
     # 3. Font character normalization
     print("\n[3/5] Checking and normalizing font character formats...")
-    run_cmd([sys.executable, FIX_ACCENTS_PY, PROJECT_JSON], cwd=BASE_DIR)
+    run_cmd([sys.executable, FIX_ACCENTS_PY, PROJECT_JSON], cwd=PROJECT_ROOT)
 
     # 4. Inject Italian translation
     print("\n[4/5] Injecting Italian translation into Spanish slot...")
     master_dir = os.path.join(PAK_WORK_DIR, "master")
-    run_cmd([sys.executable, TEXT_TOOL_PY, "apply", "spa", master_dir, PROJECT_JSON], cwd=BASE_DIR)
+    run_cmd([sys.executable, TEXT_TOOL_PY, "apply", "spa", master_dir, PROJECT_JSON], cwd=PROJECT_ROOT)
 
     # 5. Repack and install into game
     print("\n[5/5] Repacking PACK00.pak and installing into game...")
