@@ -24879,7 +24879,7 @@
     "i": 106,
     "src": "¿Recuperarla?",
     "ref": "Restore?",
-    "dst": "¿Restaurarla? -> Restaurarla?",
+    "dst": "Restaurarla?",
     "id": "eventmessagedata/event_message_mm04_121.ebm::106"
    },
    {
@@ -164298,7 +164298,7 @@
     "label": "STR_FIELDMAP_TWEET_1069",
     "src": "¡Rutger! ¡Otra vez has dejado tu arma por ahí tirada y casi me tropiezo! ¡Te he dicho que es muy grande!",
     "ref": "Rutger! I almost bumped into your weapon again! It keeps getting in the way because it's too big!",
-    "dst": "¡Rutger! Hai lasciato di nuovo in giro la tua arma e per poco non ci inciampavo! Ti ho detto che e' troppo grande!",
+    "dst": "Rutger! Hai lasciato di nuovo in giro la tua arma e per poco non ci inciampavo! Ti ho detto che e' troppo grande!",
     "id": "__ui__/message.json::STR_FIELDMAP_TWEET_1069"
    },
    {
