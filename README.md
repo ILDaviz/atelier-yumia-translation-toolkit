@@ -14,17 +14,28 @@ Replaces the **Spanish** language slot with clean, natural Italian.
 
 ### Installation
 1. Clone or download this repository.
-2. Double-click **`run_toolkit.bat`** (or run `python src/update_patch.py` in terminal).
+2. Double-click **`run_toolkit.bat`** and choose **`[1]`** to install the ready translation.
 3. Launch the game and set the text language to **Español** in the settings.
 
 *That's it! All dialogues, menus, tutorials, items, and UI are now in Italian.*
 
 ---
 
+## Toolkit Menu Options (`run_toolkit.bat`)
+
+Running `run_toolkit.bat` (or `python src/yumia_cli.py`) opens an interactive menu:
+
+- **`[1] Install / Update translation in game`**: Automatically injects all 29,007 Italian translations into the game (~15 seconds, ready-to-play).
+- **`[2] AI Translation`**: Interactive wizard to run or customize translations with AI (prompts for provider, API key, model name, and workers).
+- **`[3] Extract raw texts from game`**: Extracts dialogues and UI text directly from game files into a new project JSON (useful when new DLCs or major game updates arrive).
+- **`[4] Change / Set game folder path`**: Displays the currently detected Steam folder and lets you set a custom path if needed.
+
+---
+
 ## Game Updates / Steam Patches
 
 If an official game update or Steam patch resets your language:
-- Simply double-click **`run_toolkit.bat`** again.
+- Simply run **`run_toolkit.bat`** and choose **`[1]`** again (or run `python src/update_patch.py`).
 - It will automatically re-extract, inject the translations, and update your game in ~15 seconds.
 
 ---
