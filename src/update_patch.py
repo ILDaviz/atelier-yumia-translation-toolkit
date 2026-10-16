@@ -49,7 +49,8 @@ def main():
     print("\n[2/5] Extracting current PACK00.pak...")
     os.makedirs(PAK_WORK_DIR, exist_ok=True)
     pak_work_pak = os.path.join(PAK_WORK_DIR, "PACK00.pak")
-    shutil.copy2(game_pak, pak_work_pak)
+    source_pak = game_pak_orig if os.path.isfile(game_pak_orig) else game_pak
+    shutil.copy2(source_pak, pak_work_pak)
     
     run_cmd([GUST_PAK_EXE, "PACK00.pak"], cwd=PAK_WORK_DIR)
     print("      Extraction completed successfully.")

@@ -12,7 +12,7 @@ def is_string_candidate(data, off):
     if off + 4 > len(data):
         return None
     (v,) = struct.unpack_from("<I", data, off)
-    if not (1 <= v <= MAX_STR) or off + 4 + v > len(data):
+    if not (2 <= v <= MAX_STR) or off + 4 + v > len(data):
         return None
     raw = data[off + 4 : off + 4 + v]
     if raw[-1:] != b"\x00" or b"\x00" in raw[:-1]:
@@ -26,32 +26,41 @@ def is_string_candidate(data, off):
     return txt, off + 4 + v
 
 def tokenize(data):
-    """Split ebm into tokens: ('u32', int) or ('str', text)."""
-    tokens, off = [], 0
-    while off < len(data):
-        cand = is_string_candidate(data, off)
-        if cand:
-            tokens.append(("str", cand[0]))
-            off = cand[1]
-        else:
-            if off + 4 > len(data):
-                tokens.append(("raw", data[off:]))
-                break
-            (v,) = struct.unpack_from("<I", data, off)
-            tokens.append(("u32", v))
-            off += 4
+    """Split ebm into tokens: ('raw', bytes) or ('str', text). Preserves byte-perfect alignment."""
+    tokens = []
+    off = 0
+    last_end = 0
+    while off < len(data) - 4:
+        v = int.from_bytes(data[off : off + 4], "little")
+        if 2 <= v <= MAX_STR and off + 4 + v <= len(data):
+            raw = data[off + 4 : off + 4 + v]
+            if raw[-1:] == b"\x00" and b"\x00" not in raw[:-1]:
+                try:
+                    txt = raw[:-1].decode("utf-8")
+                    if all(c >= " " or c in "\n\r\t" for c in txt):
+                        if off > last_end:
+                            tokens.append(("raw", data[last_end:off]))
+                        tokens.append(("str", txt))
+                        off = off + 4 + v
+                        last_end = off
+                        continue
+                except UnicodeDecodeError:
+                    pass
+        off += 1
+    if last_end < len(data):
+        tokens.append(("raw", data[last_end:]))
     return tokens
 
 def detokenize(tokens):
     out = bytearray()
     for kind, val in tokens:
-        if kind == "u32":
-            out += struct.pack("<I", val)
-        elif kind == "raw":
+        if kind == "raw":
             out += val
-        else:
+        elif kind == "str":
             b = val.encode("utf-8") + b"\x00"
-            out += struct.pack("<I", len(b)) + b
+            out += int.to_bytes(len(b), 4, "little") + b
+        elif kind == "u32":
+            out += struct.pack("<I", val)
     return bytes(out)
 
 IDENT = re.compile(r"^[A-Za-z0-9_\-\.]+$")
@@ -181,12 +190,36 @@ def cmd_apply(lang, master, project_path, dry=False):
         p = os.path.join(master, lang, rel.replace("/", os.sep))
         data = open(p, "rb").read()
         toks = tokenize(data)
-        strs_idx = [n for n, (k, _) in enumerate(toks) if k == "str"]
-        for i_tok, s_val in [(strs_idx[i], s["dst"]) for s in segs for i in [s["i"]] if s.get("dst")]:
-            toks[i_tok] = ("str", s_val)
-            changed += 1
-        missing = len(segs) - len(dst_map)
-        skipped += missing
+        str_tok_indices = [idx for idx, (k, _) in enumerate(toks) if k == "str"]
+        trans_tok_indices = [idx for idx in str_tok_indices if is_translatable(toks[idx][1])]
+
+        used_toks = set()
+        for s_idx, s in enumerate(segs):
+            dst = s.get("dst")
+            if not dst:
+                skipped += 1
+                continue
+            src = s.get("src")
+            target = None
+
+            # 1. Exact text match
+            for ti in trans_tok_indices:
+                if ti not in used_toks and toks[ti][1] == src:
+                    target = ti
+                    break
+
+            # 2. Sequential fallback if index in bounds
+            if target is None:
+                if s_idx < len(trans_tok_indices) and trans_tok_indices[s_idx] not in used_toks:
+                    target = trans_tok_indices[s_idx]
+
+            if target is not None:
+                used_toks.add(target)
+                toks[target] = ("str", dst)
+                changed += 1
+            else:
+                skipped += 1
+
         if not dry:
             open(p, "wb").write(detokenize(toks))
     print(f"{'DRY RUN: ' if dry else ''}applied {changed} segments ({skipped} still untranslated)")
