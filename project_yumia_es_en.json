@@ -154,6 +154,18 @@
     "src": "(Es una persona muy honesta...)",
     "ref": "( ... He really is an honest guy.)",
     "dst": "(E' davvero una persona onesta...)"
+   },
+   {
+    "i": 25,
+    "src": "<SEL_CM01_010_1_A><CR>Tampoco es que tenga mucha fe en mí misma...",
+    "ref": "<SEL_CM01_010_1_A><CR>I'm not very confident in that ...",
+    "dst": "<SEL_CM01_010_1_A><CR>Non e' che io abbia molta fiducia in me stessa..."
+   },
+   {
+    "i": 26,
+    "src": "<SEL_CM01_010_1_B><CR>Ten cuidado, no vayas a enamorarte de mí.",
+    "ref": "<SEL_CM01_010_1_B><CR>Sure you won't fall for me?",
+    "dst": "<SEL_CM01_010_1_B><CR>Attento a non innamorarti di me."
    }
   ],
   "eventmessagedata/event_message_cm01_020.ebm": [
@@ -498,6 +510,18 @@
     "src": "No sé si alguna vez podría dar siquiera con una primera respuesta...",
     "ref": "... The first answer in a whole chain of more worrying ...?",
     "dst": "Non so se riusciro' mai anche solo a trovare una prima risposta..."
+   },
+   {
+    "i": 26,
+    "src": "<SEL_CM01_050_1_A><CR>¿Qué otra cosa podría ser?",
+    "ref": "<SEL_CM01_050_1_A><CR>Well, I figured you definitely would be.",
+    "dst": "<SEL_CM01_050_1_A><CR>Cos'altro poteva essere?"
+   },
+   {
+    "i": 27,
+    "src": "<SEL_CM01_050_1_B><CR>Yo tampoco me la quito de la cabeza.",
+    "ref": "<SEL_CM01_050_1_B><CR>I've been thinking about the whole thing too.",
+    "dst": "<SEL_CM01_050_1_B><CR>Nemmeno io riesco a togliermelo dalla testa."
    }
   ],
   "eventmessagedata/event_message_cm01_060.ebm": [
@@ -748,6 +772,18 @@
     "src": "No cabe duda de que son hermanos.",
     "ref": "Wow, you can really tell they're related.",
     "dst": "Non c'e' dubbio che siano fratelli."
+   },
+   {
+    "i": 23,
+    "src": "<SEL_CM01_070_1_A><CR>¿Y qué has escrito tú, Viktor?",
+    "ref": "<SEL_CM01_070_1_A><CR>Then, what do you write about, Viktor?",
+    "dst": "<SEL_CM01_070_1_A><CR>E tu che cosa hai scritto, Viktor?"
+   },
+   {
+    "i": 24,
+    "src": "<SEL_CM01_070_1_B><CR>Prefiero guardarme mis recuerdos.",
+    "ref": "<SEL_CM01_070_1_B><CR>I'd rather keep my memories to myself.",
+    "dst": "<SEL_CM01_070_1_B><CR>Preferisco tenere per me i miei ricordi."
    }
   ],
   "eventmessagedata/event_message_cm01_080.ebm": [
@@ -860,6 +896,18 @@
     "src": "Te pega tanto insistir en algo que no se te da bien, Viktor...",
     "ref": "Keeping at something that keeps getting you down is so like you, Viktor.",
     "dst": "Insistere su qualcosa che non ti riesce proprio e' cosi' tipico tuo, Viktor..."
+   },
+   {
+    "i": 12,
+    "src": "<SEL_CM01_090_1_A><CR>¿Por qué lo hacías por tu cuenta entonces?",
+    "ref": "<SEL_CM01_090_1_A><CR>Why were you doing it yourself before?",
+    "dst": "<SEL_CM01_090_1_A><CR>Perche' lo facevi da solo, allora?"
+   },
+   {
+    "i": 13,
+    "src": "<SEL_CM01_090_1_B><CR>También me lo podrías pedir a mí, si quieres.",
+    "ref": "<SEL_CM01_090_1_B><CR>You could ask me too, you know.",
+    "dst": "<SEL_CM01_090_1_B><CR>Potresti chiederlo anche a me, se vuoi."
    }
   ],
   "eventmessagedata/event_message_cm01_100.ebm": [
@@ -964,6 +1012,18 @@
     "src": "No lo hace a propósito, de verdad.",
     "ref": "He really doesn't mean anything by it, okay?",
     "dst": "Non lo fa apposta, davvero."
+   },
+   {
+    "i": 17,
+    "src": "<SEL_CM01_100_1_A><CR>Viktor, no asustes a la pobre chica.",
+    "ref": "<SEL_CM01_100_1_A><CR>Viktor, stop terrifying the poor girl.",
+    "dst": "<SEL_CM01_100_1_A><CR>Viktor, non spaventare la povera ragazza."
+   },
+   {
+    "i": 18,
+    "src": "<SEL_CM01_100_1_B><CR>Lenja parece un poco abrumada.",
+    "ref": "<SEL_CM01_100_1_B><CR>Aw, someone's feeling shy.",
+    "dst": "<SEL_CM01_100_1_B><CR>Lenja sembra un po' intimidita."
    }
   ],
   "eventmessagedata/event_message_cm01_110.ebm": [
@@ -1172,6 +1232,18 @@
     "src": "Desde luego que no. Y creedme, sé que sois los primeros que estáis al pie del cañón, pero agradezco cualquier cosa que podáis ofrecernos.",
     "ref": "No, never. I know that you don't have much in the way of free time yourselves, but I would appreciate whatever you can scrape together.",
     "dst": "Certamente che no. E credetemi, so che anche voi avete poco tempo libero, ma vi saro' grata per qualsiasi cosa possiate offrirci."
+   },
+   {
+    "i": 17,
+    "src": "<SEL_CM01_120_1_A><CR>¿Y eso? ¿Son los monstruos más fuertes ahora?",
+    "ref": "<SEL_CM01_120_1_A><CR>Because the monsters got stronger?",
+    "dst": "<SEL_CM01_120_1_A><CR>Come mai? I mostri sono diventati piu' forti?"
+   },
+   {
+    "i": 18,
+    "src": "<SEL_CM01_120_1_B><CR>¿Es por el desgaste y el cansancio?",
+    "ref": "<SEL_CM01_120_1_B><CR>Because everyone's feeling worn out?",
+    "dst": "<SEL_CM01_120_1_B><CR>E' per via della stanchezza e dello sfinimento?"
    }
   ],
   "eventmessagedata/event_message_cm01_130.ebm": [
@@ -1556,6 +1628,18 @@
     "src": "Nos parecemos más de lo que creía.",
     "ref": "We might be more alike than I thought.",
     "dst": "Ci somigliamo piu' di quanto pensassi."
+   },
+   {
+    "i": 23,
+    "src": "<SEL_CM02_010_1_A><CR>Toda la razón.",
+    "ref": "<SEL_CM02_010_1_A><CR>Isla's right.",
+    "dst": "<SEL_CM02_010_1_A><CR>Hai perfettamente ragione."
+   },
+   {
+    "i": 24,
+    "src": "<SEL_CM02_010_1_B><CR>Yo no diría tanto.",
+    "ref": "<SEL_CM02_010_1_B><CR>I don't think so.",
+    "dst": "<SEL_CM02_010_1_B><CR>Io non direi tanto."
    }
   ],
   "eventmessagedata/event_message_cm02_020.ebm": [
@@ -2185,9 +2269,15 @@
    },
    {
     "i": 849,
-    "src": "<SEL_CM02_050_1_B><CR>¿Seguro?",
-    "ref": "",
+    "src": "<SEL_CM02_050_1_B><CR>Sicura?",
+    "ref": "<SEL_CM02_050_1_B><CR>Are you sure?",
     "dst": "<SEL_CM02_050_1_B><CR>Sicura?"
+   },
+   {
+    "i": 35,
+    "src": "<SEL_CM02_050_1_A><CR>Si tú lo dices...",
+    "ref": "<SEL_CM02_050_1_A><CR>If you say so ...",
+    "dst": "<SEL_CM02_050_1_A><CR>Se lo dici tu..."
    }
   ],
   "eventmessagedata/event_message_cm02_060.ebm": [
@@ -3114,6 +3204,18 @@
     "src": "¿Cómo? Eh, ¡espera! ¡Espérame!",
     "ref": "What? Hold on ... Wait up!",
     "dst": "Cosa? Ehi, aspetta! Aspettami!"
+   },
+   {
+    "i": 16,
+    "src": "<SEL_CM03_010_1_A><CR>¿Puedo acompañarte?",
+    "ref": "<SEL_CM03_010_1_A><CR>Can I come with you?",
+    "dst": "<SEL_CM03_010_1_A><CR>Posso venire con te?"
+   },
+   {
+    "i": 17,
+    "src": "<SEL_CM03_010_1_B><CR>¿Adónde vas?",
+    "ref": "<SEL_CM03_010_1_B><CR>Where are you going?",
+    "dst": "<SEL_CM03_010_1_B><CR>Dove stai andando?"
    }
   ],
   "eventmessagedata/event_message_cm03_020.ebm": [
@@ -3388,6 +3490,18 @@
     "src": "La verdad, no sé qué es peor.",
     "ref": "I dunno which side's more messed up.",
     "dst": "La verita' e' che non so quale delle due cose sia peggiore."
+   },
+   {
+    "i": 27,
+    "src": "<SEL_CM03_030_1_A><CR>Ahora que ha pasado un tiempo, ¿qué opinas de todo eso?",
+    "ref": "<SEL_CM03_030_1_A><CR>How do you feel about it all now?",
+    "dst": "<SEL_CM03_030_1_A><CR>Ora che e' passato del tempo, che ne pensi di tutto questo?"
+   },
+   {
+    "i": 28,
+    "src": "<SEL_CM03_030_1_B><CR>Asumiste toda la responsabilidad.",
+    "ref": "<SEL_CM03_030_1_B><CR>You took it all upon yourself.",
+    "dst": "<SEL_CM03_030_1_B><CR>Ti sei preso tutta la responsabilita'."
    }
   ],
   "eventmessagedata/event_message_cm03_040.ebm": [
@@ -3644,6 +3758,18 @@
     "src": "Puf... No puedo contigo.",
     "ref": "*Sigh* That's enough outta you.",
     "dst": "Uff... sei proprio impossibile."
+   },
+   {
+    "i": 29,
+    "src": "<SEL_CM03_050_1_A><CR>Gracias por contármelo.",
+    "ref": "<SEL_CM03_050_1_A><CR>Thank you for telling me.",
+    "dst": "<SEL_CM03_050_1_A><CR>Grazie per avermelo raccontato."
+   },
+   {
+    "i": 30,
+    "src": "<SEL_CM03_050_1_B><CR>No esperaba que te abrieras conmigo.",
+    "ref": "<SEL_CM03_050_1_B><CR>I didn't think you'd share so much.",
+    "dst": "<SEL_CM03_050_1_B><CR>Non mi aspettavo che ti aprissi con me."
    }
   ],
   "eventmessagedata/event_message_cm03_060.ebm": [
@@ -4027,9 +4153,15 @@
    },
    {
     "i": 407,
-    "src": "<SEL_CM03_110_1_B><CR>Venga, no te pongas así.",
-    "ref": "",
+    "src": "<SEL_CM03_110_1_B><CR>Dai, non fare cosi'.",
+    "ref": "<SEL_CM03_110_1_B><CR>Come on, don't say that.",
     "dst": "<SEL_CM03_110_1_B><CR>Dai, non fare cosi'."
+   },
+   {
+    "i": 17,
+    "src": "<SEL_CM03_110_1_A><CR>¡Así es!",
+    "ref": "<SEL_CM03_110_1_A><CR>That's right!",
+    "dst": "<SEL_CM03_110_1_A><CR>Esatto!"
    }
   ],
   "eventmessagedata/event_message_cm03_120.ebm": [
@@ -4476,6 +4608,18 @@
     "src": "Ja, ja, espero estar a la altura de tus expectativas.",
     "ref": "*Chuckle* I hope that I can live up to your expectations.",
     "dst": "Ah, ah, spero di essere all'altezza delle tue aspettative."
+   },
+   {
+    "i": 18,
+    "src": "<SEL_CM04_010_1_A><CR>¿No te importaría?",
+    "ref": "<SEL_CM04_010_1_A><CR>You wouldn't mind?",
+    "dst": "<SEL_CM04_010_1_A><CR>Non ti dispiacerebbe?"
+   },
+   {
+    "i": 19,
+    "src": "<SEL_CM04_010_1_B><CR>¡Me encantaría!",
+    "ref": "<SEL_CM04_010_1_B><CR>I'd love to!",
+    "dst": "<SEL_CM04_010_1_B><CR>Mi farebbe molto piacere!"
    }
   ],
   "eventmessagedata/event_message_cm04_020.ebm": [
@@ -4735,9 +4879,15 @@
    },
    {
     "i": 435,
-    "src": "<SEL_CM04_030_1_B><CR>¿Qué clase de munición?",
-    "ref": "",
+    "src": "<SEL_CM04_030_1_B><CR>Che tipo di munizioni?",
+    "ref": "<SEL_CM04_030_1_B><CR>What kind of bullets?",
     "dst": "<SEL_CM04_030_1_B><CR>Che tipo di munizioni?"
+   },
+   {
+    "i": 18,
+    "src": "<SEL_CM04_030_1_A><CR>¿Quieres que te fabrique un poco?",
+    "ref": "<SEL_CM04_030_1_A><CR>Should I make you some more?",
+    "dst": "<SEL_CM04_030_1_A><CR>Vuoi che te ne crei ancora un po'?"
    }
   ],
   "eventmessagedata/event_message_cm04_040.ebm": [
@@ -4973,9 +5123,15 @@
    },
    {
     "i": 610,
-    "src": "<SEL_CM04_050_1_B><CR>¡Oye, que no tengo tan mala memoria!",
-    "ref": "<SEL_CM04_050_1_B><CR>I'm not always forgetting things!",
-    "dst": "<SEL_CM04_050_1_B><CR>Ehi, non e' che mi dimentico sempre le cose!"
+    "src": "<SEL_CM04_050_1_B><CR>¿En serio?",
+    "ref": "<SEL_CM04_050_1_B><CR>Is that really true?",
+    "dst": "<SEL_CM04_050_1_B><CR>E' davvero cosi'?"
+   },
+   {
+    "i": 26,
+    "src": "<SEL_CM04_050_1_A><CR>¿Que está igual que siempre?",
+    "ref": "<SEL_CM04_050_1_A><CR>\"It's the same as always\"?",
+    "dst": "<SEL_CM04_050_1_A><CR>\"E' sempre lo stesso\"?"
    }
   ],
   "eventmessagedata/event_message_cm04_060.ebm": [
@@ -5203,9 +5359,15 @@
    },
    {
     "i": 916,
-    "src": "<SEL_CM04_060_1_B><CR>Estaré contigo.",
-    "ref": "Regardless, I trust you, Nina. No matter what happens, I'll always think of you as a friend.",
-    "dst": "<SEL_CM04_060_1_B><CR>Ti staro' accanto."
+    "src": "<SEL_CM04_060_1_B><CR>¡Derrotemos a los monstruos!",
+    "ref": "<SEL_CM04_060_1_B><CR>Let's take down some monsters!",
+    "dst": "<SEL_CM04_060_1_B><CR>Sconfiggiamo i mostri!"
+   },
+   {
+    "i": 38,
+    "src": "<SEL_CM04_060_1_A><CR>Vamos a buscar pistas.",
+    "ref": "<SEL_CM04_060_1_A><CR>Let's look for clues.",
+    "dst": "<SEL_CM04_060_1_A><CR>Cerchiamo degli indizi."
    }
   ],
   "eventmessagedata/event_message_cm04_070.ebm": [
@@ -5584,6 +5746,18 @@
     "src": "S-solo quiero decir que no pienso s-ser tu nueva a-almohada gigante...",
     "ref": "I-I'm not going to be your new body pillow, you know ...",
     "dst": "N-non intendo diventare io il tuo nuovo cuscino gigante, sai..."
+   },
+   {
+    "i": 23,
+    "src": "<SEL_CM04_100_1_A><CR>Eso parece...",
+    "ref": "<SEL_CM04_100_1_A><CR>It sure looks that way ...",
+    "dst": "<SEL_CM04_100_1_A><CR>Sembra proprio di si'..."
+   },
+   {
+    "i": 24,
+    "src": "<SEL_CM04_100_1_B><CR>No sé qué pensar.",
+    "ref": "<SEL_CM04_100_1_B><CR>I don't know what to make of it.",
+    "dst": "<SEL_CM04_100_1_B><CR>Non so cosa pensare."
    }
   ],
   "eventmessagedata/event_message_cm04_150.ebm": [
@@ -5826,6 +6000,18 @@
     "src": "(Debo esforzarme para que este lugar vuelva a estar lleno de vida.)",
     "ref": "Indeed, I will. Which is why I'll be continuing to count on you all.",
     "dst": "(Devo impegnarmi perche' questo posto torni pieno di vita.)"
+   },
+   {
+    "i": 40,
+    "src": "<SEL_CM04_150_1_A><CR>Echa un vistazo.",
+    "ref": "<SEL_CM04_150_1_A><CR>Take a look.",
+    "dst": "<SEL_CM04_150_1_A><CR>Dai un'occhiata."
+   },
+   {
+    "i": 41,
+    "src": "<SEL_CM04_150_1_B><CR>Hablemos de otra cosa.",
+    "ref": "<SEL_CM04_150_1_B><CR>Let's talk about something else.",
+    "dst": "<SEL_CM04_150_1_B><CR>Parliamo di qualcos'altro."
    }
   ],
   "eventmessagedata/event_message_cm04_160.ebm": [
@@ -5993,9 +6179,15 @@
    },
    {
     "i": 703,
-    "src": "<SEL_CM04_160_1_B><CR>No tiene ningún sentido.",
-    "ref": "Yes, with everyone.",
+    "src": "<SEL_CM04_160_1_B><CR>Non ha alcun senso.",
+    "ref": "<SEL_CM04_160_1_B><CR>There's no point to all of this.",
     "dst": "<SEL_CM04_160_1_B><CR>Non ha alcun senso."
+   },
+   {
+    "i": 28,
+    "src": "<SEL_CM04_160_1_A><CR>Basilius quería recuperar algo a cualquier coste.",
+    "ref": "<SEL_CM04_160_1_A><CR>Maybe he wanted it back anyway.",
+    "dst": "<SEL_CM04_160_1_A><CR>Basilius voleva recuperare qualcosa a qualunque costo."
    }
   ],
   "eventmessagedata/event_message_cm05_010.ebm": [
@@ -6198,6 +6390,18 @@
     "src": "(Mmm... Ojalá consiga confiar más en sí misma algún día.)",
     "ref": "( ... Hm. I hope she can find some more confidence in herself someday.)",
     "dst": "(Mmm... Spero che un giorno possa avere piu' fiducia in se stessa.)"
+   },
+   {
+    "i": 19,
+    "src": "<SEL_CM05_020_1_A><CR>No has causado problemas.",
+    "ref": "<SEL_CM05_020_1_A><CR>You didn't cause trouble.",
+    "dst": "<SEL_CM05_020_1_A><CR>Non hai causato alcun problema."
+   },
+   {
+    "i": 20,
+    "src": "<SEL_CM05_020_1_B><CR>¡Siempre eres de gran ayuda!",
+    "ref": "<SEL_CM05_020_1_B><CR>You're always a big help!",
+    "dst": "<SEL_CM05_020_1_B><CR>Sei sempre di grande aiuto!"
    }
   ],
   "eventmessagedata/event_message_cm05_030.ebm": [
@@ -6532,6 +6736,18 @@
     "src": "(Menos mal. Parece que esta vez se lo ha tomado mejor.)",
     "ref": "Thank you, Miss Yumia. I feel a little better now.",
     "dst": "(Meno male. Sembra che questa volta l'abbia presa bene.)"
+   },
+   {
+    "i": 29,
+    "src": "<SEL_CM05_040_1_A><CR>¿No te encuentras bien?",
+    "ref": "<SEL_CM05_040_1_A><CR>Are you not feeling well?",
+    "dst": "<SEL_CM05_040_1_A><CR>Non ti senti bene?"
+   },
+   {
+    "i": 30,
+    "src": "<SEL_CM05_040_1_B><CR>¿Tienes hambre?",
+    "ref": "<SEL_CM05_040_1_B><CR>Are you hungry?",
+    "dst": "<SEL_CM05_040_1_B><CR>Hai fame?"
    }
   ],
   "eventmessagedata/event_message_cm05_050.ebm": [
@@ -6784,6 +7000,18 @@
     "src": "Je, je. Es la oportunidad perfecta para pedirle ayuda a alguien. Yo me ocupo.",
     "ref": "Hehe. This is the perfect chance for you to ask someone else for help. Just leave this to me.",
     "dst": "Eheh. E' l'occasione perfetta per chiedere aiuto a qualcuno. Lascia fare a me."
+   },
+   {
+    "i": 10,
+    "src": "<SEL_CM05_080_1_A><CR>¿Siempre las traes?",
+    "ref": "<SEL_CM05_080_1_A><CR>Do you always bring them?",
+    "dst": "<SEL_CM05_080_1_A><CR>Le porti sempre con te?"
+   },
+   {
+    "i": 11,
+    "src": "<SEL_CM05_080_1_B><CR>¿Y qué pasa si no tienes flores?",
+    "ref": "<SEL_CM05_080_1_B><CR>What if you don't have any?",
+    "dst": "<SEL_CM05_080_1_B><CR>E cosa succede se non hai fiori?"
    }
   ],
   "eventmessagedata/event_message_cm05_090.ebm": [
@@ -7212,6 +7440,18 @@
     "src": "¡Tengo que seguir esforzándome al máximo hasta que llegue ese día!",
     "ref": "I have to keep doing my best until that day comes!",
     "dst": "Devo continuare a impegnarmi al massimo fino a quel giorno!"
+   },
+   {
+    "i": 23,
+    "src": "<SEL_CM05_160_1_A><CR>Te echaré de menos.",
+    "ref": "<SEL_CM05_160_1_A><CR>I'll miss you.",
+    "dst": "<SEL_CM05_160_1_A><CR>Mi mancherai."
+   },
+   {
+    "i": 24,
+    "src": "<SEL_CM05_160_1_B><CR>Hora de crear más recuerdos.",
+    "ref": "<SEL_CM05_160_1_B><CR>Let's make more memories.",
+    "dst": "<SEL_CM05_160_1_B><CR>E' ora di creare altri ricordi."
    }
   ],
   "eventmessagedata/event_message_mm00_010.ebm": [
@@ -8074,6 +8314,18 @@
     "src": "Isla y Viktor se han unido al grupo.",
     "ref": "Even if you hadn't told us to, it's our duty to go wherever you go ...",
     "dst": "Isla e Viktor si sono uniti al gruppo."
+   },
+   {
+    "i": 56,
+    "src": "<SEL_MM01_010_1_A><CR>¡Me alegro de conocerte!",
+    "ref": "<SEL_MM01_010_1_A><CR>It's nice to meet you.",
+    "dst": "<SEL_MM01_010_1_A><CR>Piacere di conoscerti!"
+   },
+   {
+    "i": 57,
+    "src": "<SEL_MM01_010_1_B><CR>Es un verdadero placer conoceros.",
+    "ref": "<SEL_MM01_010_1_B><CR>I'm pleased to make your acquaintance.",
+    "dst": "<SEL_MM01_010_1_B><CR>E' un vero piacere fare la vostra conoscenza."
    }
   ],
   "eventmessagedata/event_message_mm01_020.ebm": [
@@ -9178,6 +9430,18 @@
     "src": "Solo pretendo ayudar...",
     "ref": "",
     "dst": "Voglio solo dare una mano..."
+   },
+   {
+    "i": 41,
+    "src": "<SEL_MM01_060_1_A><CR>Debemos tomar la iniciativa.",
+    "ref": "<SEL_MM01_060_1_A><CR>We should take the initiative here.",
+    "dst": "<SEL_MM01_060_1_A><CR>Dobbiamo prendere l'iniziativa."
+   },
+   {
+    "i": 42,
+    "src": "<SEL_MM01_060_1_B><CR>Debemos recuperar fuerzas.",
+    "ref": "<SEL_MM01_060_1_B><CR>We should get our forces back in shape.",
+    "dst": "<SEL_MM01_060_1_B><CR>Dobbiamo recuperare le forze."
    }
   ],
   "eventmessagedata/event_message_mm01_070a.ebm": [
@@ -10868,6 +11132,18 @@
     "src": "Haré todo lo que esté en mi mano.",
     "ref": "I will do whatever I can to help.",
     "dst": "Faro' tutto cio' che e' in mio potere."
+   },
+   {
+    "i": 38,
+    "src": "<SEL_MM01_170_1_A><CR>Gracias.",
+    "ref": "<SEL_MM01_170_1_A><CR>Thank you.",
+    "dst": "<SEL_MM01_170_1_A><CR>Grazie."
+   },
+   {
+    "i": 39,
+    "src": "<SEL_MM01_170_1_B><CR>Solo cumplo con mi deber.",
+    "ref": "<SEL_MM01_170_1_B><CR>This is my duty, after all.",
+    "dst": "<SEL_MM01_170_1_B><CR>Faccio solo il mio dovere."
    }
   ],
   "eventmessagedata/event_message_mm01_171.ebm": [
@@ -12219,9 +12495,15 @@
    },
    {
     "i": 364,
-    "src": "<SEL_MM02_010_1_B><CR>Parece que se nos ha adelantado, ¿no?",
+    "src": "<SEL_MM02_010_1_B><CR>Sembra che ci abbia preceduto, vero?",
     "ref": "<SEL_MM02_010_1_B><CR>So we've been beaten to the chase, then?",
     "dst": "<SEL_MM02_010_1_B><CR>Sembra che ci abbia preceduto, vero?"
+   },
+   {
+    "i": 15,
+    "src": "<SEL_MM02_010_1_A><CR>¿Estaba solo?",
+    "ref": "<SEL_MM02_010_1_A><CR>He was by himself?",
+    "dst": "<SEL_MM02_010_1_A><CR>Era da solo?"
    }
   ],
   "eventmessagedata/event_message_mm02_020a.ebm": [
@@ -13058,6 +13340,18 @@
     "src": "Rutger se ha unido al grupo.",
     "ref": "Nuh-uh. No way!",
     "dst": "Rutger si e' unito al gruppo."
+   },
+   {
+    "i": 47,
+    "src": "<SEL_MM02_050_1_A><CR>¿Seguro que es lo correcto?",
+    "ref": "<SEL_MM02_050_1_A><CR>Is this all right?",
+    "dst": "<SEL_MM02_050_1_A><CR>Sei sicuro che sia la cosa giusta?"
+   },
+   {
+    "i": 48,
+    "src": "<SEL_MM02_050_1_B><CR>Si esas son tus órdenes...",
+    "ref": "<SEL_MM02_050_1_B><CR>If those are your orders.",
+    "dst": "<SEL_MM02_050_1_B><CR>Se questi sono i tuoi ordini..."
    }
   ],
   "eventmessagedata/event_message_mm02_060.ebm": [
@@ -13519,9 +13813,15 @@
    },
    {
     "i": 696,
-    "src": "<SEL_MM02_080_1_B><CR>No esperaba menos.",
-    "ref": "",
-    "dst": "<SEL_MM02_080_1_B><CR>Non mi aspettavo meno."
+    "src": "<SEL_MM02_080_1_B><CR>Non mi aspettavo meno.",
+    "ref": "<SEL_MM02_080_1_B><CR>As expected of a seasoned adventurer.",
+    "dst": "<SEL_MM02_080_1_B><CR>Non mi aspettavo niente di meno."
+   },
+   {
+    "i": 27,
+    "src": "<SEL_MM02_080_1_A><CR>Qué serio de repente.",
+    "ref": "<SEL_MM02_080_1_A><CR>You're suddenly acting serious.",
+    "dst": "<SEL_MM02_080_1_A><CR>Come sei serio all'improvviso."
    }
   ],
   "eventmessagedata/event_message_mm02_090.ebm": [
@@ -13695,9 +13995,15 @@
    },
    {
     "i": 675,
-    "src": "<SEL_MM02_090_1_B><CR>Claro que no.",
+    "src": "<SEL_MM02_090_1_B><CR>Certo che no.",
     "ref": "<SEL_MM02_090_1_B><CR>Of course not.",
     "dst": "<SEL_MM02_090_1_B><CR>Certo che no."
+   },
+   {
+    "i": 29,
+    "src": "<SEL_MM02_090_1_A><CR>Bueno, tanto como amigo...",
+    "ref": "<SEL_MM02_090_1_A><CR>Well, something like that.",
+    "dst": "<SEL_MM02_090_1_A><CR>Beh, non proprio un amico..."
    }
   ],
   "eventmessagedata/event_message_mm02_100.ebm": [
@@ -14326,6 +14632,18 @@
     "src": "Tienes razón, sigamos.",
     "ref": "... You're right. Let's go.",
     "dst": "Hai ragione, continuiamo."
+   },
+   {
+    "i": 13,
+    "src": "<SEL_MM02_160_1_A><CR>No lo descartaría.",
+    "ref": "<SEL_MM02_160_1_A><CR>It's not out of the question.",
+    "dst": "<SEL_MM02_160_1_A><CR>Non lo escluderei."
+   },
+   {
+    "i": 14,
+    "src": "<SEL_MM02_160_1_B><CR>Ojalá que no.",
+    "ref": "<SEL_MM02_160_1_B><CR>I hope not.",
+    "dst": "<SEL_MM02_160_1_B><CR>Speriamo di no."
    }
   ],
   "eventmessagedata/event_message_mm02_170.ebm": [
@@ -16306,6 +16624,18 @@
     "src": "Nina se ha unido al grupo.",
     "ref": "Our full-scale investigation and pioneering efforts begin now. Here are the pioneering plans. Good luck out there.",
     "dst": "Nina si e' unita al gruppo."
+   },
+   {
+    "i": 31,
+    "src": "<SEL_MM03_044_1_A><CR>Quiero que nos llevemos bien.",
+    "ref": "<SEL_MM03_044_1_A><CR>I want to be on friendly terms.",
+    "dst": "<SEL_MM03_044_1_A><CR>Voglio che andiamo d'accordo."
+   },
+   {
+    "i": 32,
+    "src": "<SEL_MM03_044_1_B><CR>Quiero tener determinación.",
+    "ref": "<SEL_MM03_044_1_B><CR>I want to be resolute.",
+    "dst": "<SEL_MM03_044_1_B><CR>Voglio essere determinata."
    }
   ],
   "eventmessagedata/event_message_mm03_045.ebm": [
@@ -18712,6 +19042,18 @@
     "src": "Déjalo... Me las piro.",
     "ref": "If I were to have my eye on anyone, it'd be that mercenary girl. Somethin' about her puts me on edge.",
     "dst": "Lascia perdere... Me la spiovento."
+   },
+   {
+    "i": 42,
+    "src": "<SEL_MM03_102_1_A><CR>Creo que es lo correcto.",
+    "ref": "<SEL_MM03_102_1_A><CR>I feel like it's the right thing to do.",
+    "dst": "<SEL_MM03_102_1_A><CR>Penso sia la cosa giusta da fare."
+   },
+   {
+    "i": 43,
+    "src": "<SEL_MM03_102_1_B><CR>Mi madre me crio así.",
+    "ref": "<SEL_MM03_102_1_B><CR>That's how my mom raised me.",
+    "dst": "<SEL_MM03_102_1_B><CR>Mia madre mi ha cresciuta cosi'."
    }
   ],
   "eventmessagedata/event_message_mm03_104.ebm": [
@@ -20894,6 +21236,18 @@
     "src": "Hemos tenido tiempo de descansar... Es hora de volver a las obligaciones.",
     "ref": "",
     "dst": "Abbiamo avuto tempo di riposare... E' ora di tornare ai nostri doveri."
+   },
+   {
+    "i": 60,
+    "src": "<SEL_MM04_043_1_A><CR>No queda otra que luchar.",
+    "ref": "<SEL_MM04_043_1_A><CR>We can't avoid fighting.",
+    "dst": "<SEL_MM04_043_1_A><CR>Non resta che combattere."
+   },
+   {
+    "i": 61,
+    "src": "<SEL_MM04_043_1_B><CR>Tiene que haber una solución pacífica.",
+    "ref": "<SEL_MM04_043_1_B><CR>I'd like to find a peaceful way.",
+    "dst": "<SEL_MM04_043_1_B><CR>Ci deve essere una soluzione pacifica."
    }
   ],
   "eventmessagedata/event_message_mm04_060.ebm": [
@@ -22006,6 +22360,18 @@
     "src": "Hasta la próxima.",
     "ref": "Wait!",
     "dst": "Alla prossima."
+   },
+   {
+    "i": 36,
+    "src": "<SEL_MM04_140_1_A><CR>Tu corazón sigue siendo humano.",
+    "ref": "<SEL_MM04_140_1_A><CR>Your heart remains human.",
+    "dst": "<SEL_MM04_140_1_A><CR>Il tuo cuore e' ancora umano."
+   },
+   {
+    "i": 37,
+    "src": "<SEL_MM04_140_1_B><CR>...",
+    "ref": "<SEL_MM04_140_1_B><CR>...",
+    "dst": "<SEL_MM04_140_1_B><CR>..."
    }
   ],
   "eventmessagedata/event_message_mm04_141.ebm": [
@@ -22920,6 +23286,18 @@
     "src": "¡Excelente! ¡Por aquí, humanos!",
     "ref": "Excellent! Humans, this way!",
     "dst": "Eccellente! Di qui, umani!"
+   },
+   {
+    "i": 39,
+    "src": "<SEL_MM05_020_1_A><CR>Los seguiremos.",
+    "ref": "<SEL_MM05_020_1_A><CR>Let's join them.",
+    "dst": "<SEL_MM05_020_1_A><CR>Li seguiremo."
+   },
+   {
+    "i": 40,
+    "src": "<SEL_MM05_020_1_B><CR>Me encantaría ir a su aldea, pero...",
+    "ref": "<SEL_MM05_020_1_B><CR>As much as I'd like to go ...",
+    "dst": "<SEL_MM05_020_1_B><CR>Mi piacerebbe molto andare al loro villaggio, ma..."
    }
   ],
   "eventmessagedata/event_message_mm05_030.ebm": [
@@ -24260,6 +24638,24 @@
     "src": "Vale, andando.",
     "ref": "True. Let's go check it out.",
     "dst": "Va bene, andiamo."
+   },
+   {
+    "i": 52,
+    "src": "<SEL_MM05_084_1_A><CR>Trepemos al árbol.",
+    "ref": "<SEL_MM05_084_1_A><CR>Let's climb the huge tree.",
+    "dst": "<SEL_MM05_084_1_A><CR>Arrampichiamoci sull'albero."
+   },
+   {
+    "i": 53,
+    "src": "<SEL_MM05_084_1_B><CR>Vigilemos la tierra de las bendiciones.",
+    "ref": "<SEL_MM05_084_1_B><CR>Let's stake out the Blessed Land.",
+    "dst": "<SEL_MM05_084_1_B><CR>Sorvegliamo la terra delle benedizioni."
+   },
+   {
+    "i": 54,
+    "src": "<SEL_MM05_084_1_C><CR>Gritemos bien fuerte el nombre de Corleonis.",
+    "ref": "<SEL_MM05_084_1_C><CR>Let's shout Corleonis's name.",
+    "dst": "<SEL_MM05_084_1_C><CR>Gridiamo forte il nome di Corleonis."
    }
   ],
   "eventmessagedata/event_message_mm05_090.ebm": [
@@ -24397,9 +24793,15 @@
    },
    {
     "i": 542,
-    "src": "<SEL_MM05_090_1_B><CR>A lo mejor se me ocurre algo...",
-    "ref": "",
+    "src": "<SEL_MM05_090_1_B><CR>Magari mi viene in mente qualcosa...",
+    "ref": "<SEL_MM05_090_1_B><CR>I can probably fix it ...",
     "dst": "<SEL_MM05_090_1_B><CR>Magari mi viene in mente qualcosa..."
+   },
+   {
+    "i": 23,
+    "src": "<SEL_MM05_090_1_A><CR>¡No se me resistirá!",
+    "ref": "<SEL_MM05_090_1_A><CR>I'll figure something out!",
+    "dst": "<SEL_MM05_090_1_A><CR>Non mi arrendero'!"
    }
   ],
   "eventmessagedata/event_message_mm05_100.ebm": [
@@ -27324,6 +27726,18 @@
     "src": "Entonces, ¿a qué esperamos? Vamos a hablar con los demás para volver a ponerlo todo manos a la obra. Juntos.",
     "ref": "What about you, Nina? What do you want to do now?",
     "dst": "Allora, che aspettiamo? Andiamo a parlare con gli altri per rimettere tutto in moto. Insieme."
+   },
+   {
+    "i": 50,
+    "src": "<SEL_MM05_260_1_A><CR>Hay cosas de las que no siempre se puede hablar.",
+    "ref": "<SEL_MM05_260_1_A><CR>Some things you can't talk about.",
+    "dst": "<SEL_MM05_260_1_A><CR>Ci sono cose di cui non sempre si puo' parlare."
+   },
+   {
+    "i": 51,
+    "src": "<SEL_MM05_260_1_B><CR>Ojalá nos lo hubieras contado.",
+    "ref": "<SEL_MM05_260_1_B><CR>I wish you had told us.",
+    "dst": "<SEL_MM05_260_1_B><CR>Vorrei che ce lo avessi detto."
    }
   ],
   "eventmessagedata/event_message_mm05_280.ebm": [
@@ -28080,6 +28494,18 @@
     "src": "Ese es nuestro destino por ahora. Seguro que encontramos algo útil.",
     "ref": "Let's head there for now. I'm sure we'll find something to work with.",
     "dst": "Per ora, andiamo li'. Sono sicura che troveremo qualcosa di utile."
+   },
+   {
+    "i": 36,
+    "src": "<SEL_MM05_330_1_A><CR>Necesitamos conocer sus verdaderas intenciones.",
+    "ref": "<SEL_MM05_330_1_A><CR>We need to figure out his true intentions.",
+    "dst": "<SEL_MM05_330_1_A><CR>Dobbiamo scoprire le sue vere intenzioni."
+   },
+   {
+    "i": 37,
+    "src": "<SEL_MM05_330_1_B><CR>No podemos dejar que se salga con la suya.",
+    "ref": "<SEL_MM05_330_1_B><CR>We can't leave him to his own devices.",
+    "dst": "<SEL_MM05_330_1_B><CR>Non possiamo lasciare che faccia di testa sua."
    }
   ],
   "eventmessagedata/event_message_mm05_340.ebm": [
@@ -28824,6 +29250,18 @@
     "src": "En nuestro trabajo, siempre hay tiempo para el esfuerzo personal. Pero a veces lo mejor es ser paciente y resolver las preocupaciones.",
     "ref": "Sounds like a plan. Forget the investigation for a second and go see Cledia.",
     "dst": "Nel nostro lavoro c'e' sempre tempo per impegnarsi a livello personale. Ma a volte la cosa migliore e' avere pazienza e risolvere le proprie preoccupazioni."
+   },
+   {
+    "i": 28,
+    "src": "<SEL_MM06_020_1_A><CR>Estáis exagerando.",
+    "ref": "<SEL_MM06_020_1_A><CR>You're overreacting.",
+    "dst": "<SEL_MM06_020_1_A><CR>State esagerando."
+   },
+   {
+    "i": 29,
+    "src": "<SEL_MM06_020_1_B><CR>Vale. Vamos a verla.",
+    "ref": "<SEL_MM06_020_1_B><CR>Let's go see her.",
+    "dst": "<SEL_MM06_020_1_B><CR>Va bene. Andiamo a vederla."
    }
   ],
   "eventmessagedata/event_message_mm06_030.ebm": [
@@ -30336,6 +30774,18 @@
     "src": "Cuando estén listas, nos enfrentaremos juntos a Corleonis. Je, je, ¡tiemblo de emoción solo de pensarlo!",
     "ref": "Yes. I'll try making it into bullets that my gun can shoot.",
     "dst": "Quando saranno pronte, affronteremo insieme Corleonis. Eheh, tremo di emozione solo a pensarci!"
+   },
+   {
+    "i": 47,
+    "src": "<SEL_MM06_070_1_A><CR>Quiero usar la alquimia para hacer el bien.",
+    "ref": "<SEL_MM06_070_1_A><CR>I want to use alchemy in a way that feels right.",
+    "dst": "<SEL_MM06_070_1_A><CR>Voglio usare l'alchimia a fin di bene."
+   },
+   {
+    "i": 48,
+    "src": "<SEL_MM06_070_1_B><CR>Debemos impedir que repitan los mismos errores.",
+    "ref": "<SEL_MM06_070_1_B><CR>We can't allow the same mistakes to be repeated.",
+    "dst": "<SEL_MM06_070_1_B><CR>Dobbiamo impedire che si ripetano gli stessi errori."
    }
   ],
   "eventmessagedata/event_message_mm06_090.ebm": [
@@ -30921,9 +31371,15 @@
    },
    {
     "i": 783,
-    "src": "<SEL_MM06_141_1_B><CR>¿Vuestro futuro?",
-    "ref": "",
+    "src": "<SEL_MM06_141_1_B><CR>Il vostro futuro?",
+    "ref": "<SEL_MM06_141_1_B><CR>Your future?",
     "dst": "<SEL_MM06_141_1_B><CR>Il vostro futuro?"
+   },
+   {
+    "i": 34,
+    "src": "<SEL_MM06_141_1_A><CR>¿No nos culpáis?",
+    "ref": "<SEL_MM06_141_1_A><CR>You don't blame us?",
+    "dst": "<SEL_MM06_141_1_A><CR>Non date la colpa a noi?"
    }
   ],
   "eventmessagedata/event_message_mm06_150.ebm": [
@@ -31920,6 +32376,18 @@
     "src": "¿Y si miramos por los alrededores? Tal vez encontremos alguna pista.",
     "ref": "But even so, is it really possible for every trace of it to be completely gone?",
     "dst": "Che ne dici di dare un'occhiata in giro? Forse troviamo qualche indizio."
+   },
+   {
+    "i": 10,
+    "src": "<SEL_MM07_010_1_A><CR>Me cuesta imaginarlo.",
+    "ref": "<SEL_MM07_010_1_A><CR>That shouldn't be the case ...",
+    "dst": "<SEL_MM07_010_1_A><CR>Faccio fatica a immaginarlo."
+   },
+   {
+    "i": 11,
+    "src": "<SEL_MM07_010_1_B><CR>Eso implicaría...",
+    "ref": "<SEL_MM07_010_1_B><CR>If that's true, then ...",
+    "dst": "<SEL_MM07_010_1_B><CR>Questo implicherebbe..."
    }
   ],
   "eventmessagedata/event_message_mm07_020.ebm": [
@@ -34688,6 +35156,18 @@
     "src": "Gracias. Ya habéis oído, rumbo hacia el suroeste.",
     "ref": "Thanks. Well then, let's head that way.",
     "dst": "Grazie. Avete sentito: direzione sud-ovest."
+   },
+   {
+    "i": 12,
+    "src": "<SEL_MM07_380_1_A><CR>Es como si todo se viniera abajo.",
+    "ref": "<SEL_MM07_380_1_A><CR>It sounds like Aladiss was falling apart.",
+    "dst": "<SEL_MM07_380_1_A><CR>Sembra che Aladiss stesse crollando a pezzi."
+   },
+   {
+    "i": 13,
+    "src": "<SEL_MM07_380_1_B><CR>Me alegro de que no detuvieran a la doctora Marina.",
+    "ref": "<SEL_MM07_380_1_B><CR>I'm glad Doctor Marina wasn't arrested.",
+    "dst": "<SEL_MM07_380_1_B><CR>Sono contenta che la dottoressa Marina non sia stata arrestata."
    }
   ],
   "eventmessagedata/event_message_mm07_390.ebm": [
@@ -34856,6 +35336,18 @@
     "src": "Centrémonos en el edificio del consejo. ¡Esta vez daremos con ese pasadizo secreto!",
     "ref": "Let's turn our focus back to the council building. We're definitely going to find that secret passage this time!",
     "dst": "Concentriamoci sull'edificio del consiglio. Questa volta troveremo quel passaggio segreto!"
+   },
+   {
+    "i": 20,
+    "src": "<SEL_MM07_410_1_A><CR>¿Qué pretendía conseguir?",
+    "ref": "<SEL_MM07_410_1_A><CR>We don't know his motive, but ...",
+    "dst": "<SEL_MM07_410_1_A><CR>Cosa sperava di ottenere?"
+   },
+   {
+    "i": 21,
+    "src": "<SEL_MM07_410_1_B><CR>Debemos ser consecuentes con sus motivos.",
+    "ref": "<SEL_MM07_410_1_B><CR>We should carry forward his intentions.",
+    "dst": "<SEL_MM07_410_1_B><CR>Dobbiamo essere coerenti con le sue motivazioni."
    }
   ],
   "eventmessagedata/event_message_mm07_420.ebm": [
@@ -34963,15 +35455,27 @@
    },
    {
     "i": 433,
-    "src": "<SEL_MM07_420_1_B><CR>La estatua con un escudo.",
-    "ref": "",
+    "src": "<SEL_MM07_420_1_B><CR>La statua con uno scudo.",
+    "ref": "<SEL_MM07_420_1_B><CR>Statue holding a shield.",
     "dst": "<SEL_MM07_420_1_B><CR>La statua con uno scudo."
    },
    {
     "i": 494,
-    "src": "<SEL_MM07_420_1_D><CR>La estatua con una balanza.",
-    "ref": "",
+    "src": "<SEL_MM07_420_1_D><CR>La statua con una bilancia.",
+    "ref": "<SEL_MM07_420_1_D><CR>Statue holding scales.",
     "dst": "<SEL_MM07_420_1_D><CR>La statua con una bilancia."
+   },
+   {
+    "i": 19,
+    "src": "<SEL_MM07_420_1_A><CR>La estatua con una espada.",
+    "ref": "<SEL_MM07_420_1_A><CR>Statue holding a sword.",
+    "dst": "<SEL_MM07_420_1_A><CR>La statua con la spada."
+   },
+   {
+    "i": 20,
+    "src": "<SEL_MM07_420_1_C><CR>La estatua con un bastón.",
+    "ref": "<SEL_MM07_420_1_C><CR>Statue holding a staff.",
+    "dst": "<SEL_MM07_420_1_C><CR>La statua con un bastone."
    }
   ],
   "eventmessagedata/event_message_mm07_430.ebm": [
@@ -36857,9 +37361,15 @@
    },
    {
     "i": 331,
-    "src": "<SEL_MM08_170_1_B><CR>Todavía no.",
-    "ref": "",
+    "src": "<SEL_MM08_170_1_B><CR>Non ancora.",
+    "ref": "<SEL_MM08_170_1_B><CR>Not yet.",
     "dst": "<SEL_MM08_170_1_B><CR>Non ancora."
+   },
+   {
+    "i": 12,
+    "src": "<SEL_MM08_170_1_A><CR>Vamos.",
+    "ref": "<SEL_MM08_170_1_A><CR>Let's go.",
+    "dst": "<SEL_MM08_170_1_A><CR>Andiamo."
    }
   ],
   "eventmessagedata/event_message_mm08_180.ebm": [
@@ -39883,9 +40393,15 @@
    },
    {
     "i": 698,
-    "src": "<SEL_RM01_020_1_B><CR>Vamos a preguntarle al jefe.",
-    "ref": "",
+    "src": "<SEL_RM01_020_1_B><CR>Chiediamo istruzioni al capo.",
+    "ref": "<SEL_RM01_020_1_B><CR>Let's ask the chief for instructions.",
     "dst": "<SEL_RM01_020_1_B><CR>Chiediamo istruzioni al capo."
+   },
+   {
+    "i": 29,
+    "src": "<SEL_RM01_020_1_A><CR>Ayudemos en su investigación.",
+    "ref": "<SEL_RM01_020_1_A><CR>Let's help investigate.",
+    "dst": "<SEL_RM01_020_1_A><CR>Aiutiamo con le indagini."
    }
   ],
   "eventmessagedata/event_message_rm01_030.ebm": [
@@ -40838,6 +41354,24 @@
     "src": "Sí, es su investigación después de todo. Seguro que nos puede decir algo interesante.",
     "ref": "Agreed. This is her specialty after all, she might have good insight.",
     "dst": "Sono d'accordo. E' il suo campo, dopotutto; potrebbe darci qualche dritta."
+   },
+   {
+    "i": 8,
+    "src": "<SEL_RM01_220_1_A><CR>Busquemos en otra parte.",
+    "ref": "<SEL_RM01_220_1_A><CR>Let's look elsewhere.",
+    "dst": "<SEL_RM01_220_1_A><CR>Cerchiamo altrove."
+   },
+   {
+    "i": 9,
+    "src": "<SEL_RM01_220_1_B><CR>Preguntemos a los Alber.",
+    "ref": "<SEL_RM01_220_1_B><CR>Let's ask the Alber.",
+    "dst": "<SEL_RM01_220_1_B><CR>Chiediamo agli Alber."
+   },
+   {
+    "i": 10,
+    "src": "<SEL_RM01_220_1_C><CR>Pidamos consejo a Wilma.",
+    "ref": "<SEL_RM01_220_1_C><CR>Let's ask Wilma for advice.",
+    "dst": "<SEL_RM01_220_1_C><CR>Chiediamo consiglio a Wilma."
    }
   ],
   "eventmessagedata/event_message_rm01_230.ebm": [
@@ -41619,9 +42153,21 @@
    },
    {
     "i": 259,
-    "src": "<SEL_RM01_330_1_B><CR>Comprobar qué estructura consume más energía.",
+    "src": "<SEL_RM01_330_1_B><CR>Trova una struttura con consumi elevati.",
+    "ref": "<SEL_RM01_330_1_B><CR>Find a facility with high consumption.",
+    "dst": "<SEL_RM01_330_1_B><CR>Trovare una struttura ad alto consumo energetico."
+   },
+   {
+    "i": 10,
+    "src": "<SEL_RM01_330_1_A><CR>Instalar un generador de energía.",
+    "ref": "<SEL_RM01_330_1_A><CR>Set up an Energy Generator.",
+    "dst": "<SEL_RM01_330_1_A><CR>Installare un generatore di energia."
+   },
+   {
+    "i": 11,
+    "src": "<SEL_RM01_330_1_C><CR>Seguir la corriente de maná.",
     "ref": "<SEL_RM01_330_1_C><CR>Check the path of the mana flow.",
-    "dst": "<SEL_RM01_330_1_B><CR>Trova una struttura con consumi elevati."
+    "dst": "<SEL_RM01_330_1_C><CR>Seguire il flusso di mana."
    }
   ],
   "eventmessagedata/event_message_rm01_340.ebm": [
@@ -42505,9 +43051,21 @@
    },
    {
     "i": 472,
-    "src": "<SEL_RM02_190_1_C><CR>Preguntemos al Alber curioso.",
-    "ref": "<SEL_RM02_190_1_B><CR>Let's find the Alber with the old book.",
+    "src": "<SEL_RM02_190_1_C><CR>Parliamo con l'Alber curioso.",
+    "ref": "<SEL_RM02_190_1_C><CR>Let's ask the curious Alber.",
     "dst": "<SEL_RM02_190_1_C><CR>Parliamo con l'Alber curioso."
+   },
+   {
+    "i": 18,
+    "src": "<SEL_RM02_190_1_A><CR>Preguntemos al Alber sabio.",
+    "ref": "<SEL_RM02_190_1_A><CR>Let's talk to the knowledgeable Alber.",
+    "dst": "<SEL_RM02_190_1_A><CR>Chiediamo all'Alber saggio."
+   },
+   {
+    "i": 19,
+    "src": "<SEL_RM02_190_1_B><CR>Preguntemos al Alber con un libro antiguo.",
+    "ref": "<SEL_RM02_190_1_B><CR>Let's find the Alber with the old book.",
+    "dst": "<SEL_RM02_190_1_B><CR>Chiediamo all'Alber con il libro antico."
    }
   ],
   "eventmessagedata/event_message_rm02_140.ebm": [
@@ -43242,6 +43800,24 @@
     "src": "Vale, pues manos a la obra.",
     "ref": "Right. Let's get to it.",
     "dst": "Va bene, allora mettiamoci al lavoro."
+   },
+   {
+    "i": 23,
+    "src": "<SEL_RM02_300_1_A><CR>Era un plan para llevar a cabo una repoblación forestal del páramo.",
+    "ref": "<SEL_RM02_300_1_A><CR>\"Harvest\" means reforesting the wastelands.",
+    "dst": "<SEL_RM02_300_1_A><CR>Era un piano per riforestare la terra desolata."
+   },
+   {
+    "i": 24,
+    "src": "<SEL_RM02_300_1_B><CR>Era un plan para paliar el hambre que sufría la población.",
+    "ref": "<SEL_RM02_300_1_B><CR>It was a plan to fight starvation.",
+    "dst": "<SEL_RM02_300_1_B><CR>Era un piano per combattere la carestia della popolazione."
+   },
+   {
+    "i": 25,
+    "src": "<SEL_RM02_300_1_C><CR>Era un plan para promover la cultura de la nación.",
+    "ref": "<SEL_RM02_300_1_C><CR>It was promoting a wise nation.",
+    "dst": "<SEL_RM02_300_1_C><CR>Era un piano per promuovere la cultura della nazione."
    }
   ],
   "eventmessagedata/event_message_rm02_310.ebm": [
@@ -43908,6 +44484,24 @@
     "src": "¿Peluches? Vale. Os haré algo muy adorable, solo tenéis que esperar.",
     "ref": "Plushies? All right. I'll make you something really cute, just you wait.",
     "dst": "Peluche? Va bene. Vi faro' qualcosa di adorabile, aspettate e vedrete."
+   },
+   {
+    "i": 27,
+    "src": "<SEL_RM03_080_1_A><CR>¿Y si nos libramos de los monstruos?",
+    "ref": "<SEL_RM03_080_1_A><CR>What if we get rid of monsters?",
+    "dst": "<SEL_RM03_080_1_A><CR>E se ci sbarazzassimo dei mostri?"
+   },
+   {
+    "i": 28,
+    "src": "<SEL_RM03_080_1_B><CR>¿Necesitáis algo?",
+    "ref": "<SEL_RM03_080_1_B><CR>Is there anything you want?",
+    "dst": "<SEL_RM03_080_1_B><CR>Vi serve qualcosa?"
+   },
+   {
+    "i": 29,
+    "src": "<SEL_RM03_080_1_C><CR>Puedo fabricaros algo.",
+    "ref": "<SEL_RM03_080_1_C><CR>I'll make you something.",
+    "dst": "<SEL_RM03_080_1_C><CR>Posso crearvi qualcosa."
    }
   ],
   "eventmessagedata/event_message_rm03_090.ebm": [
@@ -44406,6 +45000,24 @@
     "src": "Es verdad. Tampoco es justo que busquemos nosotros solos. Venga, vamos a reunir a todo el equipo.",
     "ref": "That's right. It wouldn't be fair if we were the only ones lookin'. Okay, let's go round everyone up.",
     "dst": "Hai ragione. Non sarebbe giusto cercare solo noi. Dai, andiamo a radunare tutti."
+   },
+   {
+    "i": 17,
+    "src": "<SEL_RM03_230_1_A><CR>Será mejor que usemos el dispositivo de rastreo.",
+    "ref": "<SEL_RM03_230_1_A><CR>Let's reuse the tracking device.",
+    "dst": "<SEL_RM03_230_1_A><CR>Sara' meglio usare il dispositivo di tracciamento."
+   },
+   {
+    "i": 18,
+    "src": "<SEL_RM03_230_1_B><CR>Busquemos sitios con aspecto sospechoso.",
+    "ref": "<SEL_RM03_230_1_B><CR>Let's search any suspicious spots.",
+    "dst": "<SEL_RM03_230_1_B><CR>Cerchiamo nei luoghi sospetti."
+   },
+   {
+    "i": 19,
+    "src": "<SEL_RM03_230_1_C><CR>Vamos a pedir ayuda al resto del equipo.",
+    "ref": "<SEL_RM03_230_1_C><CR>Let's ask the other team members to help.",
+    "dst": "<SEL_RM03_230_1_C><CR>Chiediamo aiuto al resto della squadra."
    }
   ],
   "eventmessagedata/event_message_rm03_240.ebm": [
@@ -45764,6 +46376,18 @@
     "src": "Genial. Si habéis tomado una decisión, podéis poneros manos a la obra.",
     "ref": "Very well. If you've decided, please go ahead and get started.",
     "dst": "Perfetto. Se avete preso una decisione, potete mettervi all'opera."
+   },
+   {
+    "i": 31,
+    "src": "<SEL_RM04_120_1_A><CR>Vamos a inspeccionar el cementerio imperial.",
+    "ref": "<SEL_RM04_120_1_A><CR>Let's search the imperial graveyard.",
+    "dst": "<SEL_RM04_120_1_A><CR>Ispezioniamo il cimitero imperiale."
+   },
+   {
+    "i": 32,
+    "src": "<SEL_RM04_120_1_B><CR>Investiguemos el distrito comercial.",
+    "ref": "<SEL_RM04_120_1_B><CR>Let's search the commercial district.",
+    "dst": "<SEL_RM04_120_1_B><CR>Esploriamo il distretto commerciale."
    }
   ],
   "eventmessagedata/event_message_rm04_140.ebm": [
@@ -46289,9 +46913,21 @@
    },
    {
     "i": 476,
-    "src": "<SEL_RM04_210_1_C><CR>Os construiré una base sencilla.",
-    "ref": "<SEL_RM04_210_1_B><CR>I'll make you a strong weapon.",
+    "src": "<SEL_RM04_210_1_C><CR>Vi costruiro' una base semplice.",
+    "ref": "<SEL_RM04_210_1_C><CR>I'll make you a simple base.",
     "dst": "<SEL_RM04_210_1_C><CR>Vi costruiro' una base semplice."
+   },
+   {
+    "i": 18,
+    "src": "<SEL_RM04_210_1_A><CR>Buscaremos el objeto que necesitáis.",
+    "ref": "<SEL_RM04_210_1_A><CR>We'll look for that item you need.",
+    "dst": "<SEL_RM04_210_1_A><CR>Cercheremo l'oggetto di cui avete bisogno."
+   },
+   {
+    "i": 19,
+    "src": "<SEL_RM04_210_1_B><CR>Puedo fabricaros un arma potente.",
+    "ref": "<SEL_RM04_210_1_B><CR>I'll make you a strong weapon.",
+    "dst": "<SEL_RM04_210_1_B><CR>Posso fabbricarvi un'arma potente."
    }
   ],
   "eventmessagedata/event_message_rm04_220.ebm": [
@@ -52055,9 +52691,15 @@
    },
    {
     "i": 1359,
-    "src": "<SEL_RM07_090_1_B><CR>Quiero ayudarle.",
-    "ref": "",
+    "src": "<SEL_RM07_090_1_B><CR>Voglio aiutarlo.",
+    "ref": "<SEL_RM07_090_1_B><CR>I want to help him.",
     "dst": "<SEL_RM07_090_1_B><CR>Voglio aiutarlo."
+   },
+   {
+    "i": 60,
+    "src": "<SEL_RM07_090_1_A><CR>La ignorancia es una gran amenaza.",
+    "ref": "<SEL_RM07_090_1_A><CR>Not knowing is the greater threat.",
+    "dst": "<SEL_RM07_090_1_A><CR>L'ignoranza e' una grande minaccia."
    }
   ],
   "eventmessagedata/event_message_rm07_100.ebm": [
@@ -53967,9 +54609,15 @@
    },
    {
     "i": 694,
-    "src": "<SEL_RM07_280_1_B><CR>No puedo.",
-    "ref": "You've done what had to be done.",
+    "src": "<SEL_RM07_280_1_B><CR>Non ci riesco.",
+    "ref": "<SEL_RM07_280_1_B><CR>I can't.",
     "dst": "<SEL_RM07_280_1_B><CR>Non ci riesco."
+   },
+   {
+    "i": 28,
+    "src": "<SEL_RM07_280_1_A><CR>Acaba con él.",
+    "ref": "<SEL_RM07_280_1_A><CR>Finish it.",
+    "dst": "<SEL_RM07_280_1_A><CR>Finiscilo."
    }
   ],
   "eventmessagedata/event_message_rm07_290.ebm": [

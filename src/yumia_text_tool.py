@@ -204,7 +204,7 @@ def cmd_apply(lang, master, project_path, dry=False):
 
             # 1. Exact text match
             for ti in trans_tok_indices:
-                if ti not in used_toks and toks[ti][1] == src:
+                if ti not in used_toks and (toks[ti][1] == src or toks[ti][1] == dst):
                     target = ti
                     break
 
