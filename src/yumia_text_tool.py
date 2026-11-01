@@ -141,11 +141,31 @@ def cmd_extract(src, ref, master, out):
         refs = ref_map.get(rel, [])
         segs = [{"i": i, "src": s, "ref": "", "dst": ""}
                 for i, s in enumerate(strs) if is_translatable(s)]
-        # alignment: pair translatable strings in order if counts match
+        # alignment: pair translatable strings
         ref_trans = [s for s in refs if is_translatable(s)]
-        if len(ref_trans) == len(segs):
-            for seg, r in zip(segs, ref_trans):
+        # 1. Match player choices (<SEL_ tags) directly by tag
+        ref_sel_map = {}
+        for r in ref_trans:
+            if "<SEL_" in r:
+                tag = r.split("<CR>")[0] if "<CR>" in r else r.split(">")[0] + ">"
+                ref_sel_map[tag] = r
+
+        for seg in segs:
+            if "<SEL_" in seg["src"]:
+                tag = seg["src"].split("<CR>")[0] if "<CR>" in seg["src"] else seg["src"].split(">")[0] + ">"
+                if tag in ref_sel_map:
+                    seg["ref"] = ref_sel_map[tag]
+
+        # 2. Pair non-choice dialogue lines in order if counts match
+        segs_nonsel = [s for s in segs if "<SEL_" not in s["src"]]
+        ref_nonsel = [r for r in ref_trans if "<SEL_" not in r]
+        if len(ref_nonsel) == len(segs_nonsel):
+            for seg, r in zip(segs_nonsel, ref_nonsel):
                 seg["ref"] = r
+        elif len(ref_trans) == len(segs):
+            for seg, r in zip(segs, ref_trans):
+                if not seg["ref"]:
+                    seg["ref"] = r
         project["files"][rel] = segs
     # UI
     def load_ui(lang):
