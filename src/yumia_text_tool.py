@@ -219,19 +219,31 @@ def cmd_apply(lang, master, project_path, dry=False):
             if not dst:
                 skipped += 1
                 continue
-            src = s.get("src")
+            src = s.get("src", "")
             target = None
 
-            # 1. Exact text match
-            for ti in trans_tok_indices:
-                if ti not in used_toks and (toks[ti][1] == src or toks[ti][1] == dst):
-                    target = ti
-                    break
+            # 1. Match player choices (<SEL_ tags) directly by tag
+            is_choice = "<SEL_" in src or (dst and "<SEL_" in dst)
+            if is_choice:
+                tag = src.split("<CR>")[0] if "<CR>" in src else (src.split(">")[0] + ">")
+                for ti in trans_tok_indices:
+                    if ti not in used_toks and tag in toks[ti][1]:
+                        target = ti
+                        break
 
-            # 2. Sequential fallback if index in bounds
+            # 2. Exact text match
             if target is None:
-                if s_idx < len(trans_tok_indices) and trans_tok_indices[s_idx] not in used_toks:
-                    target = trans_tok_indices[s_idx]
+                for ti in trans_tok_indices:
+                    if ti not in used_toks and (toks[ti][1] == src or toks[ti][1] == dst):
+                        target = ti
+                        break
+
+            # 3. Sequential fallback if index in bounds (never overwrite or fall back for choice tags)
+            if target is None and not is_choice:
+                if s_idx < len(trans_tok_indices):
+                    cand_ti = trans_tok_indices[s_idx]
+                    if cand_ti not in used_toks and "<SEL_" not in toks[cand_ti][1]:
+                        target = cand_ti
 
             if target is not None:
                 used_toks.add(target)

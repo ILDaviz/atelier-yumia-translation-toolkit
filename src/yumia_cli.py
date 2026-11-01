@@ -10,6 +10,7 @@ UPDATE_PATCH_PY = os.path.join(SRC_DIR, "update_patch.py")
 TRANSLATE_PY = os.path.join(SRC_DIR, "yumia_translate.py")
 FIX_ACCENTS_PY = os.path.join(SRC_DIR, "fix_accents.py")
 TEXT_TOOL_PY = os.path.join(SRC_DIR, "yumia_text_tool.py")
+PACKAGE_RELEASE_PY = os.path.join(SRC_DIR, "package_release.py")
 PAK_WORK_DIR = os.path.join(PROJECT_ROOT, "pak_work")
 
 def clear_screen():
@@ -23,6 +24,11 @@ def print_header(game_dir):
         print(f"  Game Folder: {game_dir}")
     else:
         print("  Game Folder: [Not configured - will auto-detect]")
+    
+    env_key = os.environ.get("OPENAI_API_KEY", "")
+    if env_key:
+        masked = f"{env_key[:7]}...{env_key[-4:]}" if len(env_key) > 12 else "***"
+        print(f"  OpenAI Key:  Loaded from .env ({masked})")
     print("-" * 66)
 
 def ask_choice(prompt, default="1"):
@@ -37,7 +43,7 @@ def option_install_ready(game_dir):
             print("Cannot proceed without a valid game installation directory.")
             return
 
-    print("Applying the pre-translated Italian dataset (29,007 segments)...\n")
+    print("Applying the pre-translated Italian dataset (dialogues, menus, choices)...\n")
     subprocess.run([sys.executable, UPDATE_PATCH_PY, game_dir], cwd=PROJECT_ROOT)
 
 def option_ai_translation(game_dir):
@@ -51,7 +57,7 @@ def option_ai_translation(game_dir):
     p_choice = ask_choice("Provider choice", "1")
 
     endpoint = "https://api.openai.com/v1"
-    default_model = "gpt-6-luna"
+    default_model = os.environ.get("OPENAI_MODEL", "gpt-6-luna")
     default_workers = "15"
 
     if p_choice == "2":
@@ -66,19 +72,21 @@ def option_ai_translation(game_dir):
         api_key = ask_choice("API Key")
     else:
         # OpenAI
-        endpoint = "https://api.openai.com/v1"
+        endpoint = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1")
         env_key = os.environ.get("OPENAI_API_KEY", "")
-        key_prompt = "Enter your OpenAI API Key (sk-...)"
         if env_key:
-            key_prompt += f" [leave blank to use system env: {env_key[:7]}...]"
-            api_key = input(f"{key_prompt}: ").strip()
-            if not api_key:
+            masked = f"{env_key[:7]}...{env_key[-4:]}" if len(env_key) > 12 else "***"
+            print(f"\n  [OK] Found API Key from .env / environment: {masked}")
+            use_env = ask_choice("Use this API key? (y/n)", "y").lower()
+            if use_env in ("y", "yes"):
                 api_key = env_key
+            else:
+                api_key = input("Enter your OpenAI API Key (sk-...): ").strip()
         else:
-            api_key = input(f"{key_prompt}: ").strip()
+            api_key = input("\nEnter your OpenAI API Key (sk-...): ").strip()
 
     # 2. Model
-    model = ask_choice("Model name (Recommended: gpt-6-luna)", default_model)
+    model = ask_choice(f"Model name (Recommended: {default_model})", default_model)
 
     # 3. Parallel Workers
     workers = ask_choice("Number of concurrent requests (workers)", default_workers)
@@ -123,6 +131,10 @@ def option_ai_translation(game_dir):
     apply_now = ask_choice("\nApply translated texts into the game now? (y/n)", "y").lower()
     if apply_now in ("y", "yes"):
         option_install_ready(game_dir)
+
+def option_package_release():
+    print("\n--- BUILD DOWNLOADABLE ZIP RELEASE PACKAGE ---")
+    subprocess.run([sys.executable, PACKAGE_RELEASE_PY], cwd=PROJECT_ROOT)
 
 def option_extract_game():
     print("\n--- EXTRACT RAW GAME TEXTS ---")
@@ -169,9 +181,10 @@ def main():
         print("\nWhat would you like to do?\n")
         print("  [1] Install / Update translation in game (Fast, ~15s, ready-to-play)")
         print("  [2] AI Translation (Configure provider, API key, model & workers)")
-        print("  [3] Extract raw texts from game (Create a fresh project.json)")
-        print("  [4] Change / Set game folder path")
-        print("  [5] Exit")
+        print("  [3] Create downloadable ZIP release package (Automated build)")
+        print("  [4] Extract raw texts from game (Create a fresh project.json)")
+        print("  [5] Change / Set game folder path")
+        print("  [6] Exit")
         print()
         
         choice = ask_choice("Select an option number", "1")
@@ -182,12 +195,15 @@ def main():
             option_ai_translation(game_dir)
             input("\nPress ENTER to continue...")
         elif choice == "3":
-            option_extract_game()
+            option_package_release()
             input("\nPress ENTER to continue...")
         elif choice == "4":
-            game_dir = option_configure_game_dir(game_dir)
+            option_extract_game()
             input("\nPress ENTER to continue...")
         elif choice == "5":
+            game_dir = option_configure_game_dir(game_dir)
+            input("\nPress ENTER to continue...")
+        elif choice == "6":
             print("\nGoodbye!")
             break
         else:

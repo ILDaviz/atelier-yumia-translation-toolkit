@@ -3,11 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Large game files & extracted directories
+# Large game files, builds & local release staging
 pak_work/
+release/
 *.pak
 *.pak.original
 *.bak
+*.zip
 
 # Sensitive tokens, keys and environment variables
 token.txt
@@ -15,6 +17,7 @@ token.txt
 *.token
 .env
 .env.*
+!.env.example
 config.json
 
 # Logs and temporary files

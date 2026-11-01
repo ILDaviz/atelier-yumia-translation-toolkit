@@ -2,6 +2,12 @@
 import os, sys, shutil, subprocess, json
 import game_config
 
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 SRC_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SRC_DIR)
 PAK_WORK_DIR = os.path.join(PROJECT_ROOT, "pak_work")
@@ -9,6 +15,14 @@ GUST_PAK_EXE = os.path.join(PROJECT_ROOT, "gust_tools", "gust_pak.exe")
 PROJECT_JSON = os.path.join(PROJECT_ROOT, "project_yumia_es_en.json")
 TEXT_TOOL_PY = os.path.join(SRC_DIR, "yumia_text_tool.py")
 FIX_ACCENTS_PY = os.path.join(SRC_DIR, "fix_accents.py")
+APPLY_CHOICES_PY = os.path.join(SRC_DIR, "apply_choices.py")
+
+def is_game_running():
+    try:
+        res = subprocess.run(["tasklist", "/FI", "IMAGENAME eq Atelier_Yumia.exe"], capture_output=True, text=True)
+        return "Atelier_Yumia.exe" in res.stdout
+    except Exception:
+        return False
 
 def run_cmd(cmd, cwd=None):
     print(f">> Executing: {' '.join(cmd)}")
@@ -45,6 +59,9 @@ def main():
         print("      Creating safety backup (PACK00.pak.original)...")
         shutil.copy2(game_pak, game_pak_orig)
 
+    if is_game_running():
+        print("      [!] Avviso: Atelier Yumia e' attualmente aperto.")
+
     # 2. Extract PACK00.pak
     print("\n[2/5] Extracting current PACK00.pak...")
     os.makedirs(PAK_WORK_DIR, exist_ok=True)
@@ -59,10 +76,11 @@ def main():
     print("\n[3/5] Checking and normalizing font character formats...")
     run_cmd([sys.executable, FIX_ACCENTS_PY, PROJECT_JSON], cwd=PROJECT_ROOT)
 
-    # 4. Inject Italian translation
+    # 4. Inject Italian translation (story, side quests, UI menus, and player choices)
     print("\n[4/5] Injecting Italian translation into Spanish slot...")
     master_dir = os.path.join(PAK_WORK_DIR, "master")
     run_cmd([sys.executable, TEXT_TOOL_PY, "apply", "spa", master_dir, PROJECT_JSON], cwd=PROJECT_ROOT)
+    run_cmd([sys.executable, APPLY_CHOICES_PY, master_dir, PROJECT_JSON], cwd=PROJECT_ROOT)
 
     # 5. Repack and install into game
     print("\n[5/5] Repacking PACK00.pak and installing into game...")
@@ -73,12 +91,31 @@ def main():
         print("ERROR: Repacking failed, PACK00.pak not found!")
         sys.exit(1)
 
-    shutil.copy2(new_pak, game_pak)
+    # Copy to game
+    try:
+        shutil.copy2(new_pak, game_pak)
+        print("      [OK] PACK00.pak installed successfully into game.")
+    except PermissionError:
+        print("\n[!] ERRORE: Impossibile sovrascrivere PACK00.pak perche' il gioco e' in esecuzione.")
+        print("    Chiudi il gioco Atelier Yumia e riprova.")
+        sys.exit(1)
+
+    # Also update release package folder if present
+    release_pak = os.path.join(PROJECT_ROOT, "release", "Atelier_Yumia_v1.0.7_ITA", "PACK00.pak")
+    if os.path.isdir(os.path.dirname(release_pak)):
+        shutil.copy2(new_pak, release_pak)
+        print("      [OK] Updated release folder PACK00.pak.")
 
     print("\n" + "=" * 66)
     print(" UPDATE COMPLETED SUCCESSFULLY! ")
-    print(" Italian translation has been applied to your game.")
-    print(" In game settings, select language 'Español' to play in Italian.")
+    print(" Italian translation (including dialogues, menus and choices)")
+    print(" has been applied to your game and release folder.")
+    if is_game_running():
+        print("\n [!] NOTA IMPORTANTE:")
+        print("     Atelier Yumia e' aperto: riavvia il gioco per caricare")
+        print("     i nuovi testi aggiornati in memoria!")
+    else:
+        print(" In game settings, select language 'Español' to play in Italian.")
     print("=" * 66 + "\n")
 
 if __name__ == "__main__":

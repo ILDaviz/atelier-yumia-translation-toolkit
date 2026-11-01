@@ -4,6 +4,34 @@ import os, sys, json, winreg
 SRC_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SRC_DIR)
 CONFIG_FILE = os.path.join(PROJECT_ROOT, "config.json")
+ENV_FILE = os.path.join(PROJECT_ROOT, ".env")
+
+def load_env(env_path=None):
+    """Load variables from .env into os.environ if not already present."""
+    path = env_path or ENV_FILE
+    if not os.path.isfile(path):
+        return {}
+    loaded = {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if "=" in line:
+                    key, val = line.split("=", 1)
+                    key = key.strip()
+                    val = val.strip().strip("\"'")
+                    if key:
+                        if key not in os.environ or not os.environ[key]:
+                            os.environ[key] = val
+                        loaded[key] = val
+    except Exception as e:
+        print(f"Warning: Failed to parse .env file: {e}")
+    return loaded
+
+# Automatically load .env on import
+load_env()
 
 DEFAULT_CANDIDATE_PATHS = [
     r"C:\Program Files (x86)\Steam\steamapps\common\Atelier Yumia",

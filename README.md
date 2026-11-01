@@ -1,83 +1,79 @@
-# Atelier Yumia: Italian Translation & Toolkit
+# Atelier Yumia - Italian Translation Patch
 
-[🇬🇧 Read in English](README.md) | [🇮🇹 Leggi in Italiano](README_IT.md)
+[![Release](https://img.shields.io/github/v/release/ILDaviz/atelier-yumia-translation-toolkit?style=flat-square&label=Latest%20Release)](https://github.com/ILDaviz/atelier-yumia-translation-toolkit/releases)
+[![Language](https://img.shields.io/badge/Language-Italian-green?style=flat-square)](#)
+[![Platform](https://img.shields.io/badge/Platform-PC%20%2F%20Steam-blue?style=flat-square)](#)
 
----
-
-Complete 100% Italian fan translation for **Atelier Yumia: The Alchemist of Memories & the Envisioned Land** (Steam / PC).
-
-Replaces the **Spanish** language slot with clean, natural Italian.
+A complete 100% Italian fan-translation patch for **Atelier Yumia: The Alchemist of Memories & the Envisioned Land** on PC (Steam).
 
 ---
 
-## Quick Install (1-Click)
+## 🌟 What is this?
 
-### Requirements
-- Python 3.10+
-- Game installed on Steam
+This patch brings a complete Italian localization to the Steam release of *Atelier Yumia*. It replaces the **Español (Spanish)** text slot with natural, high-quality Italian.
 
-### Installation
-1. Clone or download this repository.
-2. Double-click **`run_toolkit.bat`** and choose **`[1]`** to install the ready translation.
-3. Launch the game and set the text language to **Español** in the settings.
-
-*That's it! All dialogues, menus, tutorials, items, and UI are now in Italian.*
+### What is translated:
+- **100% Story & Dialogue:** All main story events, character side stories, and world quests (`.ebm`).
+- **All Interactive Player Choices:** Every dialogue decision and player response prompt (`<SEL_...>`).
+- **User Interface & Menus:** Full game UI, settings, status screens, and tutorials (`message.json`).
+- **Items & Alchemy:** Complete synthesis recipes, ingredients, material traits, and weapon descriptions.
 
 ---
 
-## Toolkit Menu Options (`run_toolkit.bat`)
+## 📥 Download the Patch
 
-Running `run_toolkit.bat` (or `python src/yumia_cli.py`) opens an interactive menu:
+Download the latest pre-compiled, ready-to-use patch from the official GitHub Releases page:
 
-- **`[1] Install / Update translation in game`**: Automatically injects all 29,007 Italian translations into the game (~15 seconds, ready-to-play).
-- **`[2] AI Translation`**: Interactive wizard to run or customize translations with AI. *(Recommended model: **`gpt-6-luna`** via OpenAI — exceptionally fast, high accuracy, and costs under $0.50 for the entire game).*
-- **`[3] Extract raw texts from game`**: Extracts dialogues and UI text directly from game files into a new project JSON (useful when new DLCs or major game updates arrive).
-- **`[4] Change / Set game folder path`**: Displays the currently detected Steam folder and lets you set a custom path if needed.
+👉 **[Download Latest Release Archive (.zip)](https://github.com/ILDaviz/atelier-yumia-translation-toolkit/releases/latest)**
 
----
-
-## Game Updates / Steam Patches
-
-If an official game update or Steam patch resets your language:
-- Simply run **`run_toolkit.bat`** and choose **`[1]`** again (or run `python src/update_patch.py`).
-- It will automatically re-extract, inject the translations, and update your game in ~15 seconds.
+*(No programming knowledge or Python installation required — simply download and extract the `.zip` archive).*
 
 ---
 
-## Files Overview
+## 🚀 Easy Installation (1-Click)
 
-| File / Folder | Description |
-| :--- | :--- |
-| **`project_yumia_es_en.json`** | Full dataset with all 29,007 translated segments. |
-| **`run_toolkit.bat`** | Interactive CLI launcher for Windows (1-click menu). |
-| **`src/yumia_cli.py`** | Interactive CLI wizard (installer, AI configurator, extractor). |
-| **`src/update_patch.py`** | Automated installation & packaging script. |
-| **`src/yumia_text_tool.py`** | A26 EBM and UI `message.json` extractor/injector. |
-| **`src/yumia_translate.py`** | Multi-threaded AI translation tool (OpenAI / Ollama). |
-| **`src/fix_accents.py`** | Font-safe character normalizer. |
-| **`gust_tools/`** | Official Gust PAK unpacker and repacker binaries. |
-
----
-
-## Manual Installation (Alternative)
-
-If you prefer running commands manually:
-```bash
-# 1. Unpack PACK00.pak
-cd pak_work && ..\gust_tools\gust_pak.exe "<GamePath>\Data\PACK00.pak" && cd ..
-
-# 2. Inject Italian translation
-python src/yumia_text_tool.py apply spa pak_work\master project_yumia_es_en.json
-
-# 3. Repack and copy
-cd pak_work && ..\gust_tools\gust_pak.exe PACK00.json && cd ..
-copy /y pak_work\PACK00.pak "<GamePath>\Data\PACK00.pak"
-```
+1. **Download and extract** the latest release `.zip` archive into any folder on your computer.
+2. Make sure that **Atelier Yumia is closed**.
+3. Double-click on **`Installa_Patch_ITA.bat`**:
+   - The installer will automatically locate your Steam library.
+   - It creates a safety backup of your original game file (`PACK00.pak.original`).
+   - It installs the translated patch.
+4. Launch **Atelier Yumia** from Steam.
+5. In the game's language settings, select:
+   👉 **Text Language: "Español" (Spanish)** *(this slot now contains the full Italian translation)*.
 
 ---
 
-## Disclaimer & AI Translation Notice
+## 🔄 How to Uninstall / Restore the Original Game
 
-- **AI-Generated:** This fan translation was generated using artificial intelligence (LLM).
-- **Combined Dual-Source Reference:** To maximize accuracy, natural phrasing, and contextual consistency, the Italian translation was created by cross-referencing both the **Spanish** text (target game slot) and the official **English** localization.
-- **Non-Commercial Fan Project:** This project is strictly non-commercial and not affiliated with KOEI TECMO or GUST. *Atelier Yumia: The Alchemist of Memories & the Envisioned Land* is a trademark and copyright of **KOEI TECMO GAMES CO., LTD.** / **GUST**. This patch requires a legitimate, legally owned copy of the game on Steam.
+To remove the translation and revert to the untouched original game:
+- Double-click on **`Ripristina_Originale.bat`** in the extracted patch folder.
+- Your original vanilla files will be restored immediately.
+
+*(Alternatively, you can verify file integrity via Steam: Right-click *Atelier Yumia* in your Steam Library ➔ **Properties** ➔ **Installed Files** ➔ **Verify integrity of game files**).*
+
+---
+
+## ❓ Frequently Asked Questions (FAQ)
+
+### Why does the patch replace the Spanish ("Español") slot?
+Replacing an existing game language slot allows the patch to run natively on the official game executable without requiring third-party DLL injectors, memory hooks, or external mod loaders.
+
+### What happens if Steam updates the game?
+Official game updates may overwrite `PACK00.pak`. If this happens, simply re-run `Installa_Patch_ITA.bat` to re-apply the patch.
+
+---
+
+## 🛠️ For Developers & Contributors
+
+Are you interested in how the translation pipeline works, using AI translation models, or contributing to the toolkit?
+
+Please check the **[Developer Guide & Toolkit Documentation (CONTRIBUTING.md)](CONTRIBUTING.md)**.
+
+---
+
+## ⚖️ Disclaimer
+
+- **Fan Translation:** This is a non-commercial, non-profit fan-made translation project created for the Italian gaming community.
+- **Copyright:** *Atelier Yumia: The Alchemist of Memories & the Envisioned Land* is a trademark and copyright of **KOEI TECMO GAMES CO., LTD.** and **GUST**.
+- **Requirement:** This patch requires a legitimate, legally owned copy of the game on Steam.
