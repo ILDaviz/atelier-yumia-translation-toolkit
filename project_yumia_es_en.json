@@ -40699,7 +40699,7 @@
     "i": 394,
     "src": "Incluso aquí, en la región de Lignumbria, hay mucho que desconocemos. ¿Entendéis por dónde voy?",
     "ref": "Even here in the Ligneus region, much has yet to be uncovered. You understand what I mean, right?",
-    "dst": "Anche qui, nella regione di Ligneus, c'e' ancora molto da scoprire. Capite cosa intendo, vero?"
+    "dst": "Anche qui, nella regione di Lignumbria, c'e' ancora molto da scoprire. Capite cosa intendo, vero?"
    },
    {
     "i": 416,
@@ -40723,7 +40723,7 @@
     "i": 482,
     "src": "En cualquier caso, habrá que investigar la región de Lignumbria a fondo para hacer algún avance.",
     "ref": "In any case, I guess we'll have to investigate the Ligneus region further in order to make more progress.",
-    "dst": "In ogni caso, per fare progressi dovremo indagare piu' a fondo nella regione di Ligneus."
+    "dst": "In ogni caso, per fare progressi dovremo indagare piu' a fondo nella regione di Lignumbria."
    }
   ],
   "eventmessagedata/event_message_rm01_080.ebm": [
@@ -78094,7 +78094,7 @@
     "label": "STR_SCAN_GIMMICK_ALL_TITLE_018",
     "src": "Los viajes de Yannick, edición Lignumbria",
     "ref": "Yannick's Travels, Ligneus Edition",
-    "dst": "I viaggi di Yannick, edizione Ligneus",
+    "dst": "I viaggi di Yannick, edizione Lignumbria",
     "id": "__ui__/message.json::STR_SCAN_GIMMICK_ALL_TITLE_018"
    },
    {
@@ -78836,7 +78836,7 @@
     "label": "STR_SCAN_GIMMICK_ALL_EXPLAIN_049",
     "src": "Cuando supieron que Alom, el espía que se infiltró desde Lignumbria, se escondía ahora en Syvashi, los investigadores se pusieron manos a la obra.<CR><CR>Indagaron sobre los recién llegados al país y se fijaron en un profesor de la academia.<CR><CR>Aunque se trataba de un inmigrante, parece que entró al país siguiendo las vías oficiales.<CR><CR>Como por una burla del destino, un espía que presuntamente era Alom robó documentos de un instituto de investigación.<CR><CR>Se diría que el otro bando nos lleva varios pasos de ventaja...",
     "ref": "When intelligence came in that Alom, having infiltrated from Ligneus, was now hiding out in Sivash, the investigators sprang into action.<CR><CR>They looked into those who had recently moved to the area and zeroed in on a teacher at the academy.<CR><CR>Ultimately, while he was indeed an immigrant from another country, he had entered the country through the proper channels.<CR><CR>As if to mock them, once again a spy believed to be Alom stole documents from a research institute.<CR><CR>It would seem that the other side was several steps ahead ...",
-    "dst": "Quando vennero a sapere che Alom, la spia infiltratasi da Ligneus, si nascondeva ormai a Sivash, gli investigatori si misero all'opera.<CR><CR>Indagarono su coloro che si erano trasferiti di recente nella zona e individuarono un insegnante dell'accademia.<CR><CR>In definitiva, sebbene fosse davvero un immigrato da un altro paese, era entrato nel paese seguendo i canali ufficiali.<CR><CR>Quasi per deriderli, una spia ritenuta essere Alom ha rubato documenti da un istituto di ricerca.<CR><CR>Sembra che l'altra parte ci sia parecchi passi davanti...",
+    "dst": "Quando vennero a sapere che Alom, la spia infiltratasi da Lignumbria, si nascondeva ormai a Sivash, gli investigatori si misero all'opera.<CR><CR>Indagarono su coloro che si erano trasferiti di recente nella zona e individuarono un insegnante dell'accademia.<CR><CR>In definitiva, sebbene fosse davvero un immigrato da un altro paese, era entrato nel paese seguendo i canali ufficiali.<CR><CR>Quasi per deriderli, una spia ritenuta essere Alom ha rubato documenti da un istituto di ricerca.<CR><CR>Sembra che l'altra parte ci sia parecchi passi davanti...",
     "id": "__ui__/message.json::STR_SCAN_GIMMICK_ALL_EXPLAIN_049"
    },
    {
@@ -91982,14 +91982,14 @@
     "label": "STR_QUEST_MAIN_TITLE_068",
     "src": "Informe de reconocimiento de Lignumbria",
     "ref": "Ligneus Survey Report",
-    "dst": "Rapporto di ricognizione di Ligneus",
+    "dst": "Rapporto di ricognizione di Lignumbria",
     "id": "__ui__/message.json::STR_QUEST_MAIN_TITLE_068"
    },
    {
     "label": "STR_QUEST_MAIN_TITLE_069",
     "src": "Exploración de la región de Lignumbria",
     "ref": "Pioneering the Ligneus Region",
-    "dst": "Esplorazione della regione di Ligneus",
+    "dst": "Esplorazione della regione di Lignumbria",
     "id": "__ui__/message.json::STR_QUEST_MAIN_TITLE_069"
    },
    {
@@ -130139,7 +130139,7 @@
     "label": "STR_LIBRARY_CHARACTER_038",
     "src": "Alquimista de la civilización pasada que creó a Nina. Era una de las investigadoras con más talento de su época, pero no podía aceptar las políticas de su país y se vio obligada a desertar junto a sus compañeros y a Nina. Huyó hacia el oeste hasta llegar a la región de Lignumbria, donde continuó su investigación.",
     "ref": "The alchemist from the past civilization who created Nina. She was one of the most talented researchers of her time, but she couldn't accept her country's policies, which led to her defecting along with her colleagues and Nina. She fled far west, eventually hiding in the Ligneus region while continuing her research.",
-    "dst": "L'alchimista della civilta' antica che creo' Nina. Era una delle ricercatrici piu' talentuose del suo tempo, ma non riusciva ad accettare le politiche del suo paese e diserto' insieme ai suoi colleghi e a Nina. Fuggi' molto a ovest e infine si nascose nella regione di Ligneus, dove continuo' le sue ricerche.",
+    "dst": "L'alchimista della civilta' antica che creo' Nina. Era una delle ricercatrici piu' talentuose del suo tempo, ma non riusciva ad accettare le politiche del suo paese e diserto' insieme ai suoi colleghi e a Nina. Fuggi' molto a ovest e infine si nascose nella regione di Lignumbria, dove continuo' le sue ricerche.",
     "id": "__ui__/message.json::STR_LIBRARY_CHARACTER_038"
    },
    {
@@ -148990,7 +148990,7 @@
     "label": "STR_FIELDMAP_TWEET_012",
     "src": "¡La zona de vínculo de maná ya está despejada! ¿Cuántas creéis que quedarán en la región de Lignumbria?",
     "ref": "The manabound area cleared up nicely! How many do you think are left in the Ligneus region?",
-    "dst": "La zona legata al mana e' stata ripulita per bene! Quante ne saranno rimaste nella regione di Ligneus?",
+    "dst": "La zona legata al mana e' stata ripulita per bene! Quante ne saranno rimaste nella regione di Lignumbria?",
     "id": "__ui__/message.json::STR_FIELDMAP_TWEET_012"
    },
    {
@@ -149585,7 +149585,7 @@
     "label": "STR_FIELDMAP_TWEET_149",
     "src": "A juzgar por su tamaño, yo diría que podía suministrar agua a toda Lignumbria... O incluso más lejos.",
     "ref": "Judging from the size, it must be able to provide water for all of Ligneus ... No, maybe even farther.",
-    "dst": "A giudicare dalle dimensioni, direi che poteva fornire acqua a tutto Ligneus... O anche piu' lontano.",
+    "dst": "A giudicare dalle dimensioni, direi che poteva fornire acqua a tutto Lignumbria... O anche piu' lontano.",
     "id": "__ui__/message.json::STR_FIELDMAP_TWEET_149"
    },
    {
@@ -157866,7 +157866,7 @@
     "label": "STR_FIELDMAP_PHOTO_MODE_025",
     "src": "Raíz arbórea de Lignumbria",
     "ref": "Ligneus Tree Root",
-    "dst": "Radice dell'albero Ligneus",
+    "dst": "Radice dell'albero Lignumbria",
     "id": "__ui__/message.json::STR_FIELDMAP_PHOTO_MODE_025"
    },
    {
@@ -158790,14 +158790,14 @@
     "label": "STR_FIELDMAP_LOCATION_FLAVOR_101",
     "src": "Un centro de investigación de tamaño medio que se sitúa en las llanuras de Lignumbria. En las vastas extensiones de terreno se llevaron a cabo varios experimentos.",
     "ref": "A mid-sized research facility located on the plains of the Ligneus region. Experiments were conducted using the area's vast swaths of land.",
-    "dst": "Una struttura di ricerca di medie dimensioni situata nelle pianure della regione di Ligneus. Qui furono condotti esperimenti sfruttando le vaste distese della zona.",
+    "dst": "Una struttura di ricerca di medie dimensioni situata nelle pianure della regione di Lignumbria. Qui furono condotti esperimenti sfruttando le vaste distese della zona.",
     "id": "__ui__/message.json::STR_FIELDMAP_LOCATION_FLAVOR_101"
    },
    {
     "label": "STR_FIELDMAP_LOCATION_FLAVOR_102",
     "src": "Aunque esta institución se dedicaba principalmente al estudio de la flora y la fauna, se tiene constancia de que servía como un punto de interés turístico en Lignumbria.",
     "ref": "While this institution focused primarily on the study of plants and animals found in nature, there are also reports of it serving as a quirky Ligneus sightseeing spot.",
-    "dst": "Questa istituzione si dedicava soprattutto allo studio della flora e della fauna presenti in natura, ma secondo alcune testimonianze era anche una bizzarra attrazione turistica di Ligneus.",
+    "dst": "Questa istituzione si dedicava soprattutto allo studio della flora e della fauna presenti in natura, ma secondo alcune testimonianze era anche una bizzarra attrazione turistica di Lignumbria.",
     "id": "__ui__/message.json::STR_FIELDMAP_LOCATION_FLAVOR_102"
    },
    {
@@ -158986,14 +158986,14 @@
     "label": "STR_FIELDMAP_LOCATION_FLAVOR_132",
     "src": "La antigua mansión de una familia pudiente. Es muy habitual ver estructuras de este tipo por toda Lignumbria y se ha pensado que servían como hogares de retiro.",
     "ref": "The former mansion of an influential family. It is not uncommon to see such structures throughout Ligneus, which are presumed to be retirement properties.",
-    "dst": "L'antica dimora di una famiglia influente. In tutta Ligneus si trovano spesso strutture simili, che si presume fossero residenze per la pensione.",
+    "dst": "L'antica dimora di una famiglia influente. In tutta Lignumbria si trovano spesso strutture simili, che si presume fossero residenze per la pensione.",
     "id": "__ui__/message.json::STR_FIELDMAP_LOCATION_FLAVOR_132"
    },
    {
     "label": "STR_FIELDMAP_LOCATION_FLAVOR_133",
     "src": "Una casa situada en la costa de Lignumbria. Si bien no queda claro el propósito de una edificación tan pequeña, merece la pena investigarla.",
     "ref": "A house situated along the Ligneus coastline. While the purpose of such a small structure is unclear, it is well worth investigating.",
-    "dst": "Una casa sulla costa di Ligneus. Non e' chiaro a cosa servisse un edificio cosi' piccolo, ma vale la pena esplorarlo.",
+    "dst": "Una casa sulla costa di Lignumbria. Non e' chiaro a cosa servisse un edificio cosi' piccolo, ma vale la pena esplorarlo.",
     "id": "__ui__/message.json::STR_FIELDMAP_LOCATION_FLAVOR_133"
    },
    {
@@ -160022,7 +160022,7 @@
     "label": "STR_FIELDMAP_LOCATION_692",
     "src": "Base de reconocimiento de Lignumbria",
     "ref": "Ligneus Survey Base",
-    "dst": "Base di ricognizione di Ligneus",
+    "dst": "Base di ricognizione di Lignumbria",
     "id": "__ui__/message.json::STR_FIELDMAP_LOCATION_692"
    },
    {
@@ -161527,7 +161527,7 @@
     "label": "STR_FIELDMAP_INFO_000",
     "src": "Región de Lignumbria",
     "ref": "Ligneus Region",
-    "dst": "Regione di Ligneus",
+    "dst": "Regione di Lignumbria",
     "id": "__ui__/message.json::STR_FIELDMAP_INFO_000"
    },
    {
@@ -165069,7 +165069,7 @@
     "label": "STR_DLC_BGM_000",
     "src": "Batalla normal: Región de Lignumbria",
     "ref": "Normal Battle: Ligneus Region",
-    "dst": "Battaglia normale: regione di Ligneus",
+    "dst": "Battaglia normale: regione di Lignumbria",
     "id": "__ui__/message.json::STR_DLC_BGM_000"
    },
    {
@@ -195199,6 +195199,42 @@
     "ref": "Inferno",
     "dst": "Inferno",
     "id": "__ui__/message.json::STR_ACTION_NAME_493"
+   },
+   {
+    "label": "STR_FIELDMAP_DEFINE_003",
+    "src": "¿?",
+    "ref": "???",
+    "dst": "???"
+   },
+   {
+    "label": "STR_QUEST_ETC_GENERAL_000",
+    "src": "¿?",
+    "ref": "???",
+    "dst": "???"
+   },
+   {
+    "label": "STR_MIX_DEFINE_219",
+    "src": "¿?",
+    "ref": "???",
+    "dst": "???"
+   },
+   {
+    "label": "STR_HOUSING_DEFINE_207",
+    "src": "¿?",
+    "ref": "?",
+    "dst": "?"
+   },
+   {
+    "label": "STR_EXTRA_DEFINE_002",
+    "src": "¿¿??",
+    "ref": "????",
+    "dst": "????"
+   },
+   {
+    "label": "STR_NPC_MOB_MESS_492",
+    "src": "¿...?",
+    "ref": "...?",
+    "dst": "...?"
    }
   ]
  }

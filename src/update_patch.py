@@ -17,6 +17,40 @@ TEXT_TOOL_PY = os.path.join(SRC_DIR, "yumia_text_tool.py")
 FIX_ACCENTS_PY = os.path.join(SRC_DIR, "fix_accents.py")
 APPLY_CHOICES_PY = os.path.join(SRC_DIR, "apply_choices.py")
 
+def strip_spanish_punctuation(master_dir):
+    """Ensure no leftover Spanish inverted marks (¿, ¡) remain in dialogue or UI text."""
+    from yumia_text_tool import tokenize, detokenize, load_json, save_json
+    spa_dir = os.path.join(master_dir, "spa")
+    p_msg = os.path.join(spa_dir, "fixed_data", "message", "message.json")
+    if os.path.isfile(p_msg):
+        data = load_json(p_msg)
+        changed = False
+        for e in data.get("message_message", []):
+            msg = e.get("MESSAGE", "")
+            if "¿" in msg or "¡" in msg:
+                e["MESSAGE"] = msg.replace("¿?", "???").replace("¿¿??", "????").replace("¿", "").replace("¡", "")
+                changed = True
+        if changed:
+            save_json(p_msg, data)
+
+    for root, _, files in os.walk(spa_dir):
+        for f in files:
+            if f.endswith(".ebm"):
+                p = os.path.join(root, f)
+                b = open(p, "rb").read()
+                if "¿".encode("utf-8") in b or "¡".encode("utf-8") in b:
+                    toks = tokenize(b)
+                    new_toks = []
+                    mod = False
+                    for k, t in toks:
+                        if k == "str" and ("¿" in t or "¡" in t):
+                            new_toks.append(("str", t.replace("¿?", "???").replace("¿¿??", "????").replace("¿", "").replace("¡", "")))
+                            mod = True
+                        else:
+                            new_toks.append((k, t))
+                    if mod:
+                        open(p, "wb").write(detokenize(new_toks))
+
 def is_game_running():
     try:
         res = subprocess.run(["tasklist", "/FI", "IMAGENAME eq Atelier_Yumia.exe"], capture_output=True, text=True)
@@ -81,6 +115,7 @@ def main():
     master_dir = os.path.join(PAK_WORK_DIR, "master")
     run_cmd([sys.executable, TEXT_TOOL_PY, "apply", "spa", master_dir, PROJECT_JSON], cwd=PROJECT_ROOT)
     run_cmd([sys.executable, APPLY_CHOICES_PY, master_dir, PROJECT_JSON], cwd=PROJECT_ROOT)
+    strip_spanish_punctuation(master_dir)
 
     # 5. Repack and install into game
     print("\n[5/5] Repacking PACK00.pak and installing into game...")

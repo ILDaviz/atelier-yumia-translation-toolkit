@@ -67,6 +67,8 @@ IDENT = re.compile(r"^[A-Za-z0-9_\-\.]+$")
 def is_translatable(s):
     if IDENT.match(s):          # CHARACTER_YUMIA, STR_0001, numbers
         return False
+    if "¿" in s or "¡" in s:
+        return True
     if not re.search(r"[A-Za-zÀ-ÿ]", s):
         return False
     return True
@@ -76,6 +78,8 @@ def is_ui_translatable(s):
         return False
     if re.match(r"^([0-9\.\,\:\;\/\-\+\%\s]+|%s|\{\d+\}|<[A-Za-z0-9_]+>|<\/[A-Za-z0-9_]+>)*$", s):
         return False
+    if "¿" in s or "¡" in s:
+        return True
     if not re.search(r"[A-Za-zÀ-ÿ]", s):
         return False
     return True
